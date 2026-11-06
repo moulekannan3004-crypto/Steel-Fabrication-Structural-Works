@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Portal Login - SteelCraft Fabrication</title>
+  <meta name="description" content="Sign in to the SteelCraft Client & Partner Portal to review live fabrication schedules, mill test certificates, and site delivery logs.">
+
+    <!-- Favicon / Brand Logo Tab Icon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon-apple.png">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="bg-alt d-flex flex-column min-vh-100">
+
+  <!-- Minimal Header -->
+  <header class="py-3 bg-surface border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="brand-logo" href="index.html">
+        <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
+        <div>STEEL<span class="accent">CRAFT</span></div>
+      </a>
+      <div class="header-actions">
+        <button class="theme-toggle-btn" title="Toggle Light/Dark Theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction"><span>RTL</span></button>
+        <a href="index.html" class="btn btn-outline-custom btn-sm ms-2">Back to Website</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Login Form Container -->
+  <main class="flex-grow-1 d-flex align-items-center py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-5">
+          <div class="bg-surface p-4 p-md-5 rounded shadow border border-light-subtle">
+            <div class="text-center mb-4">
+              <div class="brand-logo-icon mx-auto mb-3" style="width: 50px; height: 50px; font-size: 1.5rem;">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <h2 class="h3 fw-bold mb-1">CLIENT & EPC PORTAL</h2>
+              <p class="small text-muted mb-0">Access project BIM models, inspection reports & MTRs</p>
+            </div>
+
+            <form id="loginForm" novalidate>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Corporate Email *</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-alt border-end-0"><i class="fa-solid fa-envelope text-muted"></i></span>
+                  <input type="email" class="form-control border-start-0" id="loginEmail" placeholder="name@company.com" required>
+                </div>
+                <div class="invalid-feedback">Please enter your corporate email.</div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <label for="loginPassword" class="form-label">Password *</label>
+                  <a href="#" class="small text-accent">Forgot Password?</a>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-text bg-alt border-end-0"><i class="fa-solid fa-key text-muted"></i></span>
+                  <input type="password" class="form-control border-start-0 border-end-0" id="loginPassword" placeholder="••••••••" required>
+                  <button class="btn btn-outline-custom border-start-0 toggle-password-btn" type="button" data-target="loginPassword">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+                <div class="invalid-feedback">Password is required.</div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="rememberMe">
+                  <label class="form-check-label small text-muted" for="rememberMe">
+                    Remember credentials
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary-custom w-100 py-2">
+                Sign In to Portal <i class="fa-solid fa-arrow-right ms-2"></i>
+              </button>
+
+              <div class="position-relative my-4 text-center">
+                <hr class="text-muted">
+                <span class="position-absolute top-50 start-50 translate-middle px-3 bg-surface text-muted small">Or continue with</span>
+              </div>
+
+              <!-- Google Login UI -->
+              <button type="button" class="btn btn-outline-custom w-100 py-2 d-flex align-items-center justify-content-center gap-2">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                  <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.616z"/>
+                  <path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/>
+                  <path fill="#FBBC05" d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707s.102-1.167.282-1.707V4.961H.957C.347 6.175 0 7.55 0 9s.347 2.825.957 4.039l3.007-2.332z"/>
+                  <path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.961L3.964 7.293C4.672 5.166 6.656 3.58 9 3.58z"/>
+                </svg>
+                <span>Sign In with Corporate Google SSO</span>
+              </button>
+
+              <div id="loginAlert" class="form-alert mt-3"></div>
+
+              <div class="text-center mt-4 pt-2 border-top">
+                <p class="small text-muted mb-0">Don't have an EPC access account? <a href="register.html" class="text-accent fw-bold">Register Company</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="py-3 bg-surface border-top text-center text-secondary-light small">
+    <div class="container">
+      &copy; 2026 SteelCraft Industrial Works. Secure 256-bit TLS Encrypted Client Portal.
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>

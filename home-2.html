@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SteelCraft Engineering - Advanced Structural Steel & BIM Engineering</title>
+  <meta name="description" content="Specialized Structural Steel Engineering, Tekla 3D BIM Detailing, High-Capacity Industrial Fabrication, and Turnkey Civil Erection.">
+  <meta name="keywords" content="structural engineering, Tekla BIM, steel fabrication plant, ASTM A992, plate girder fabrication, PE stamped engineering">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SteelCraft Engineering - Advanced Structural Steel">
+  <meta property="og:description" content="Specialized Structural Steel Engineering & Plant Manufacturing.">
+  <meta property="og:type" content="website">
+
+    <!-- Favicon / Brand Logo Tab Icon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon-apple.png">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Main Navigation -->
+  <nav class="navbar navbar-expand-xl navbar-custom">
+    <div class="container-fluid px-3 px-xl-5">
+      <a class="brand-logo" href="index.html">
+        <div class="brand-logo-icon">
+          <i class="fa-solid fa-industry"></i>
+        </div>
+        <div>STEEL<span class="accent">CRAFT</span></div>
+      </a>
+
+      <!-- Controls -->
+      <div class="header-actions order-xl-3">
+        <button class="theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction" aria-label="Switch Direction">
+          <span>RTL</span>
+        </button>
+        <a href="#engineering-rfq" class="btn btn-primary-custom d-none d-sm-inline-flex ms-2">
+          <span>Submit Drawings</span>
+          <i class="fa-solid fa-upload"></i>
+        </a>
+        <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-lg text-main"></i>
+        </button>
+      </div>
+
+      <!-- Desktop Nav Items -->
+      <div class="collapse navbar-collapse order-xl-2 justify-content-center" id="desktopNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Home 2 <i class="fa-solid fa-angle-down ms-1 dropdown-caret-icon"></i></a>
+          <ul class="dropdown-menu dropdown-menu-custom">
+            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+          </ul>
+        </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom">
+      <div class="brand-logo" id="mobileMenuLabel">
+        <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
+        <div>STEEL<span class="accent">CRAFT</span></div>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+            <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Home 2 <i class="fa-solid fa-angle-down ms-1 dropdown-caret-icon"></i></a>
+          <ul class="dropdown-menu dropdown-menu-custom">
+            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="mt-4 pt-3 border-top">
+        <a href="#engineering-rfq" class="btn btn-primary-custom w-100">Submit Engineering RFQ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HOME 2 HERO: Modern Split-Layout Structural Engineering Hero
+       ========================================================================== -->
+  <header class="hero-home-2">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-stretch g-4 g-xl-5">
+        <div class="col-lg-7 d-flex flex-column justify-content-between">
+          <div>
+            <div class="hero-badge">
+            <i class="fa-solid fa-circle-check text-accent"></i>
+            <span>Tekla Structures BIM &bull; AISC Category Major Steel Bridges & Buildings</span>
+          </div>
+          <h1 class="hero-title">ENGINEERED STRUCTURAL STEEL & HIGH-PRECISION FABRICATION</h1>
+          <p class="lead text-muted mb-4">
+            Accelerating complex infrastructure and commercial construction with cloud-connected 3D BIM connection design, automated CNC plasma plate processing, and certified high-strength steel fabrication.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4 mb-lg-5">
+            <a href="#engineering-rfq" class="btn btn-primary-custom">
+              <span>Submit Project Blueprints</span>
+              <i class="fa-solid fa-file-arrow-up"></i>
+            </a>
+            <a href="#process-timeline" class="btn btn-outline-custom">
+              <span>View 6-Stage Process</span>
+              <i class="fa-solid fa-timeline"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Live Engineering Badges -->
+          <div class="row g-3">
+            <div class="col-sm-4">
+              <div class="p-3 bg-surface rounded border border-light-subtle shadow-sm h-100">
+                <span class="text-accent fw-bold h4 d-block mb-1">0.05 mm</span>
+                <small class="text-muted fw-semibold">Laser & CNC Tolerance</small>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="p-3 bg-surface rounded border border-light-subtle shadow-sm h-100">
+                <span class="text-accent fw-bold h4 d-block mb-1">ASTM A992</span>
+                <small class="text-muted fw-semibold">Grade 50 High-Strength</small>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="p-3 bg-surface rounded border border-light-subtle shadow-sm h-100">
+                <span class="text-accent fw-bold h4 d-block mb-1">BIM L300+</span>
+                <small class="text-muted fw-semibold">Clash-Free Detailing</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 d-flex flex-column">
+          <div class="hero-image-stack shadow-lg">
+            <img src="assets/images/hero-img-2.jpg" alt="High-Precision Steel Engineering and Machinery" class="main-img">
+            <div class="tech-spec-badge">
+              <div class="number">2,500 MT</div>
+              <div class="label">Monthly Engineering Throughput</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: ENGINEERING EXPERTISE
+       ========================================================================== -->
+  <section class="section-padding bg-surface">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="section-subtitle">
+          <i class="fa-solid fa-microchip"></i> Engineering Science
+        </div>
+        <h2 class="section-title">INTEGRATED STRUCTURAL ENGINEERING SERVICES</h2>
+        <p class="text-muted">
+          Our in-house team of licensed Professional Engineers (PE) and Tekla detailers bridges the gap between architectural concept and shop floor fabrication.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrap"><i class="fa-solid fa-cube"></i></div>
+            <h4 class="h5 mb-2">3D Tekla BIM Detailing</h4>
+            <p class="small text-muted mb-0">Parametric 3D steel detailing generating CNC DSTV files, bill of materials, and conflict-free connection details.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
+            <h4 class="h5 mb-2">Finite Element Analysis (FEA)</h4>
+            <p class="small text-muted mb-0">Advanced stress simulation, deflection modeling, and seismic dynamic response analysis using SAP2000 and STAAD.Pro.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrap"><i class="fa-solid fa-stamp"></i></div>
+            <h4 class="h5 mb-2">PE Stamped Calculations</h4>
+            <p class="small text-muted mb-0">Certified connection engineering calculations, base plate anchor designs, and crane runway girder verifications.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrap"><i class="fa-solid fa-layer-group"></i></div>
+            <h4 class="h5 mb-2">Value Engineering (VE)</h4>
+            <p class="small text-muted mb-0">Optimizing tonnage, standardizing plate thicknesses, and selecting economical steel sections without compromising safety.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: 6-STAGE FABRICATION PROCESS TIMELINE
+       ========================================================================== -->
+  <section class="section-padding bg-alt" id="process-timeline">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="section-subtitle">
+          <i class="fa-solid fa-timeline"></i> Lifecycle Management
+        </div>
+        <h2 class="section-title">THE 6-STAGE FABRICATION & ERECTION PROCESS</h2>
+        <p class="text-muted">
+          Our rigorous quality gate workflow ensures zero defects from initial CAD import to final bolt torque verification.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Stage 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="timeline-step h-100">
+            <div class="timeline-step-number">01</div>
+            <h4 class="h5">BIM Detailing & DSTV Extraction</h4>
+            <p class="small text-muted mb-0">Converting engineer-of-record design drawings into high-fidelity 3D models with individual piece markings and CNC coordinates.</p>
+          </div>
+        </div>
+        <!-- Stage 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="timeline-step h-100">
+            <div class="timeline-step-number">02</div>
+            <h4 class="h5">Automated CNC Cutting & Coping</h4>
+            <p class="small text-muted mb-0">Automated beam sawing, robotic plasma beveling, high-def plate burning, and computerized multi-spindle bolt-hole drilling.</p>
+          </div>
+        </div>
+        <!-- Stage 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="timeline-step h-100">
+            <div class="timeline-step-number">03</div>
+            <h4 class="h5">Precision Fit-Up & Certified Welding</h4>
+            <p class="small text-muted mb-0">Assembly in laser-calibrated jigs followed by certified Submerged Arc (SAW) and flux-cored welding conforming to AWS D1.1.</p>
+          </div>
+        </div>
+        <!-- Stage 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="timeline-step h-100">
+            <div class="timeline-step-number">04</div>
+            <h4 class="h5">Non-Destructive Testing (NDT)</h4>
+            <p class="small text-muted mb-0">Level II CWI inspection utilizing Ultrasonic (UT) and Magnetic Particle (MPI) examination with digital QA traceability certs.</p>
+          </div>
+        </div>
+        <!-- Stage 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="timeline-step h-100">
+            <div class="timeline-step-number">05</div>
+            <h4 class="h5">Shot Blasting & Protective Coating</h4>
+            <p class="small text-muted mb-0">Centrifugal wheel blasting to SSPC-SP 10 (Near-White Metal) followed by high-build epoxy, zinc-rich primers, or hot-dip galvanizing.</p>
+          </div>
+        </div>
+        <!-- Stage 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="timeline-step h-100">
+            <div class="timeline-step-number">06</div>
+            <h4 class="h5">Phased Logistics & Turnkey Erection</h4>
+            <p class="small text-muted mb-0">Sequenced flatbed delivery matched to site hook-time, supported by certified mobile crane operators and master ironworkers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: TECHNICAL SPECIFICATIONS & QUALITY STANDARDS TABLE
+       ========================================================================== -->
+  <section class="section-padding bg-surface">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-8">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-certificate"></i> Strict Compliance
+          </div>
+          <h2 class="section-title mb-0">TECHNICAL SPECIFICATIONS & MATERIAL GRADES</h2>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="contact.html" class="btn btn-outline-custom">Request Mill Test Certificates</a>
+        </div>
+      </div>
+
+      <div class="table-responsive shadow-sm rounded">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Steel Classification</th>
+              <th>Standard Specification</th>
+              <th>Yield Strength (Min)</th>
+              <th>Typical Structural Application</th>
+              <th>Inspection Standard</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Wide Flange Beams & Columns</strong></td>
+              <td>ASTM A992 / A572 Gr. 50</td>
+              <td>50 ksi (345 MPa)</td>
+              <td>Building frameworks, composite floors, heavy columns</td>
+              <td>AISC 360 / AWS D1.1 (UT 100%)</td>
+            </tr>
+            <tr>
+              <td><strong>Heavy Structural Plates</strong></td>
+              <td>ASTM A36 / A572 Gr. 50 / A514 (T-1)</td>
+              <td>36 - 100 ksi</td>
+              <td>Base plates, transfer girders, bridge box sections</td>
+              <td>ASTM A6 / ASME Section IX</td>
+            </tr>
+            <tr>
+              <td><strong>Hollow Structural Sections (HSS)</strong></td>
+              <td>ASTM A500 Grade B / C</td>
+              <td>46 - 50 ksi</td>
+              <td>Architectural trusses, bracing columns, space frames</td>
+              <td>Eddy Current / Ultrasonic</td>
+            </tr>
+            <tr>
+              <td><strong>High-Strength Fasteners</strong></td>
+              <td>ASTM F3125 (A325 / A490)</td>
+              <td>120 - 150 ksi</td>
+              <td>Moment connections, splice joints, shear tabs</td>
+              <td>Rotational Capacity (ROCAP) Testing</td>
+            </tr>
+            <tr>
+              <td><strong>Surface Protection Coatings</strong></td>
+              <td>SSPC / NACE Standards</td>
+              <td>SP 10 / SP 6 Blast</td>
+              <td>Inorganic zinc primer, polyurethane, intumescent fireproofing</td>
+              <td>SSPC-PA 2 Dry Film Thickness</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: FEATURED STRUCTURAL PROJECTS
+       ========================================================================== -->
+  <section class="section-padding bg-alt">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+        <div>
+          <div class="section-subtitle">
+            <i class="fa-solid fa-trophy"></i> Landmark Structures
+          </div>
+          <h2 class="section-title mb-0">FEATURED STRUCTURAL ENGINEERING BUILDS</h2>
+        </div>
+        <div class="mt-3 mt-md-0">
+          <a href="projects.html" class="btn btn-navy">Browse All Case Studies <i class="fa-solid fa-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="project-card" style="height: 420px;">
+            <img src="assets/images/project-6.jpg" alt="Texas Continental Aerospace Clear-Span Truss Framework">
+            <div class="project-card-overlay">
+              <span class="project-category">Long-Span Engineering</span>
+              <h3 class="text-white">Texas Continental Aerospace Hub</h3>
+              <p class="text-white text-opacity-75 small">95-meter continuous clear span steel truss framework with heavy automated overhead crane supports.</p>
+              <div class="project-meta">
+                <span><i class="fa-solid fa-calendar me-1"></i>Completed 2026</span>
+                <span><i class="fa-solid fa-weight-hanging me-1"></i>7,100 MT Steel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="project-card" style="height: 420px;">
+            <img src="assets/images/project-1.jpg" alt="Centennial Financial Tower Skyscraper Core Structure">
+            <div class="project-card-overlay">
+              <span class="project-category">High-Rise Commercial</span>
+              <h3 class="text-white">Centennial Financial Tower Core</h3>
+              <p class="text-white text-opacity-75 small">48-story structural framing utilizing ASTM A992 heavy columns and seismic moment-resisting connections.</p>
+              <div class="project-meta">
+                <span><i class="fa-solid fa-calendar me-1"></i>Completed 2025</span>
+                <span><i class="fa-solid fa-weight-hanging me-1"></i>12,400 MT Steel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: SAFETY & QUALITY ASSURANCE
+       ========================================================================== -->
+  <section class="section-padding bg-surface">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-shield-halved"></i> Uncompromising Rigor
+          </div>
+          <h2 class="section-title">CERTIFIED QUALITY MANAGEMENT & SAFETY PROTOCOLS</h2>
+          <p class="text-muted">
+            Safety and precision are engineered into every phase of our operations. Our Houston facility maintains strict dual certification with AISC and ISO 9001:2015.
+          </p>
+          
+          <div class="d-flex flex-column gap-3 mt-4">
+            <div class="d-flex gap-3">
+              <div class="text-accent fs-3"><i class="fa-solid fa-file-shield"></i></div>
+              <div>
+                <h5 class="mb-1">100% Full Material Traceability</h5>
+                <p class="small text-muted mb-0">Every heat number, mill test report (MTR), and inspection log is permanently archived and linked to individual piece marks.</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3">
+              <div class="text-accent fs-3"><i class="fa-solid fa-user-graduate"></i></div>
+              <div>
+                <h5 class="mb-1">Certified Welding Inspectors (CWI)</h5>
+                <p class="small text-muted mb-0">American Welding Society (AWS) certified inspectors oversee all welding procedures (WPS) and welder qualifications (WPQR).</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3">
+              <div class="text-accent fs-3"><i class="fa-solid fa-heart-pulse"></i></div>
+              <div>
+                <h5 class="mb-1">ISO 45001 Occupational Health & Safety</h5>
+                <p class="small text-muted mb-0">Comprehensive safety training, daily pre-task job safety analyses (JSA), and full fall-protection compliance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-4 p-md-5 bg-dark-industrial rounded border border-secondary border-opacity-25 shadow-lg">
+            <h3 class="text-white mb-4"><i class="fa-solid fa-award text-accent me-2"></i>Accreditations & Badges</h3>
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="dark-panel-card p-3 text-center">
+                  <h4 class="text-white h5 fw-bold mb-1">AISC</h4>
+                  <small class="text-secondary-light">Certified Fabricator &amp; Erector</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="dark-panel-card p-3 text-center">
+                  <h4 class="text-white h5 fw-bold mb-1">ISO 9001:2015</h4>
+                  <small class="text-secondary-light">Quality Management</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="dark-panel-card p-3 text-center">
+                  <h4 class="text-white h5 fw-bold mb-1">AWS D1.1 / D1.5</h4>
+                  <small class="text-secondary-light">Structural &amp; Bridge Welding</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="dark-panel-card p-3 text-center">
+                  <h4 class="text-white h5 fw-bold mb-1">EN 1090-2 EXC3</h4>
+                  <small class="text-secondary-light">European CE Structural Mark</small>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 pt-3 border-top border-secondary border-opacity-25 text-center">
+              <p class="small text-secondary-light mb-0">Audited bi-annually by independent accredited registrars.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: DIRECT TECHNICAL ENQUIRY FORM (CTA ON PAGE)
+       ========================================================================== -->
+  <section class="section-padding bg-alt" id="engineering-rfq">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="bg-surface p-4 p-md-5 rounded shadow-lg border border-light-subtle">
+            <div class="text-center mb-4">
+              <div class="section-subtitle">
+                <i class="fa-solid fa-file-signature"></i> Direct Technical RFP
+              </div>
+              <h2 class="section-title">SUBMIT YOUR PROJECT SPECIFICATIONS</h2>
+              <p class="text-muted">Upload your engineering drawings, tender schedules, or 3D models for an immediate preliminary budget and fabrication timeline.</p>
+            </div>
+
+            <form id="projectEnquiryForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" id="fullName" name="fullName" placeholder="e.g. David Vance, PE" pattern="^[A-Za-z\s\.\-\',]+$" title="Please enter letters only (no numbers)." required>
+                  <div class="invalid-feedback">Please provide your full name.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Corporate Email Address *</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="e.g. dvance@contractor.com" required>
+                  <div class="invalid-feedback">Valid corporate email is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phoneNumber" class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="e.g. +1 (555) 019-2834" pattern="^[\d\s\+\-\(\)]+$" title="Please enter numbers only (no alphabets)." required>
+                  <div class="invalid-feedback">Please enter numbers only (no alphabets).</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="companyName" class="form-label">Company / Contractor Name</label>
+                  <input type="text" class="form-control" id="companyName" name="companyName" placeholder="e.g. Apex Infrastructure EPC">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="serviceRequired" class="form-label">Primary Service Required *</label>
+                  <select class="form-select" id="serviceRequired" name="serviceRequired" required>
+                    <option value="" disabled selected>Select Specialized Service...</option>
+                    <option value="Structural Steel Fabrication">Structural Steel Fabrication</option>
+                    <option value="Industrial Shed Fabrication">Industrial Shed Fabrication</option>
+                    <option value="Steel Building Construction">Steel Building Construction</option>
+                    <option value="Metal Welding Services">Metal Welding Services</option>
+                    <option value="CNC Cutting and Bending">CNC Cutting and Bending</option>
+                    <option value="Heavy Steel Fabrication">Heavy Steel Fabrication</option>
+                    <option value="Industrial Piping Works">Industrial Piping Works</option>
+                    <option value="Steel Erection and Installation">Steel Erection and Installation</option>
+                    <option value="Custom Metal Fabrication">Custom Metal Fabrication</option>
+                  </select>
+                  <div class="invalid-feedback">Please choose a required service.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="estimatedBudget" class="form-label">Estimated Project Budget</label>
+                  <select class="form-select" id="estimatedBudget" name="estimatedBudget">
+                    <option value="Under $100k">Under $100,000</option>
+                    <option value="$100k - $500k">$100,000 - $500,000</option>
+                    <option value="$500k - $2M" selected>$500,000 - $2,000,000</option>
+                    <option value="$2M - $10M">$2,000,000 - $10,000,000</option>
+                    <option value="$10M+">$10,000,000+ Enterprise</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="projectLocation" class="form-label">Project Jobsite Location</label>
+                  <input type="text" class="form-control" id="projectLocation" name="projectLocation" placeholder="e.g. Houston, TX or Port of Corpus Christi">
+                </div>
+
+                <div class="col-12">
+                  <label for="projectDescription" class="form-label">Project Description & Technical Requirements *</label>
+                  <textarea class="form-control" id="projectDescription" name="projectDescription" rows="4" placeholder="Specify estimated steel tonnage, plate thicknesses, coating standards, site access conditions, and schedule deadlines..." required></textarea>
+                  <div class="invalid-feedback">Please provide a brief technical scope description.</div>
+                </div>
+
+                <!-- Drag & Drop File Zone -->
+                <div class="col-12">
+                  <label class="form-label">Upload Drawings / CAD / BIM / PDF Models</label>
+                  <div class="file-upload-box">
+                    <i class="fa-solid fa-cloud-arrow-up fa-3x text-accent mb-2"></i>
+                    <h5 class="mb-1">Drag and drop structural drawings here</h5>
+                    <div id="file-upload-info" class="text-muted small">Supported: PDF, DWG, DXF, STP, IFC, ZIP (Up to 25MB)</div>
+                    <input type="file" id="projectFiles" name="projectFiles" multiple>
+                  </div>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-primary-custom btn-lg px-5">
+                    <span>Submit RFP for Engineering Review</span>
+                    <i class="fa-solid fa-paper-plane ms-2"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Form Feedback Alert -->
+              <div id="projectFormAlert" class="form-alert mt-4"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & About (col-lg-4 col-md-6) -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand-wrap">
+            <div class="brand-logo">
+              <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
+              <div class="text-white">STEEL<span class="accent">CRAFT</span></div>
+            </div>
+          </div>
+          <p class="text-secondary-light">
+            AISC and ISO 9001:2015 certified steel fabrication and structural engineering contractor specializing in pre-engineered buildings and heavy industrial structures.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Core Services Links (col-lg-2 col-md-3 col-6) -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h4 class="footer-widget-title">Core Services</h4>
+          <ul class="footer-links">
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Structural Steel</a></li>
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Industrial Sheds</a></li>
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Steel Buildings</a></li>
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Welding Services</a></li>
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> CNC Cutting</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> All Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Navigation (col-lg-2 col-md-3 col-6) -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h4 class="footer-widget-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="projects.html"><i class="fa-solid fa-angle-right"></i> Project Portfolio</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Visual Gallery</a></li>
+            <li><a href="pricing.html"><i class="fa-solid fa-angle-right"></i> Pricing Packages</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Technical Blog</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Newsletter (col-lg-4 col-md-6) -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-widget-title">Houston HQ</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <div>
+              <strong class="text-white">Facility Address:</strong><br>
+              4528 Heavy Industry Pkwy, Houston, TX
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone-volume"></i>
+            <div>
+              <strong class="text-white">Phone Support:</strong><br>
+              <a href="tel:+18005553733">+1 (800) 555-STEEL</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <div>
+              <strong class="text-white">Technical Estimations:</strong><br>
+              <a href="mailto:quotes@steelcraft-works.com">quotes@steelcraft-works.com</a>
+            </div>
+          </div>
+
+          <form class="newsletter-form mt-2">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Corporate email..." required>
+              <button class="btn btn-primary-custom" type="submit">Join</button>
+            </div>
+            <div class="newsletter-feedback mt-1"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container text-center text-secondary-light small">
+        &copy; 2026 SteelCraft Engineering Division. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/portfolio-gallery.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>

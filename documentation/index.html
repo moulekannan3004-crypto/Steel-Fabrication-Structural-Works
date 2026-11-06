@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SteelCraft Template Documentation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #334155; background-color: #F8FAFC; }
+    .sidebar { background: #0B1929; color: #94A3B8; min-height: 100vh; padding: 30px 20px; }
+    .sidebar a { color: #CBD5E1; text-decoration: none; display: block; padding: 8px 12px; border-radius: 4px; font-weight: 500; margin-bottom: 4px; }
+    .sidebar a:hover, .sidebar a.active { background: rgba(249, 115, 22, 0.2); color: #F97316; }
+    .doc-content { padding: 40px; background: #FFFFFF; min-height: 100vh; }
+    pre { background: #0F172A; color: #38BDF8; padding: 18px; border-radius: 8px; overflow-x: auto; font-size: 0.9rem; }
+    code { color: #EA580C; background: #FFF7ED; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    pre code { color: inherit; background: none; padding: 0; }
+    .badge-accent { background-color: #F97316; color: #FFFFFF; }
+    h1, h2, h3, h4 { color: #0F172A; font-weight: 700; }
+    .doc-section { padding-bottom: 50px; border-bottom: 1px solid #E2E8F0; margin-bottom: 50px; }
+  </style>
+  <!-- Favicon / Brand Logo Tab Icon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/images/favicon-apple.png">
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar Navigation -->
+    <div class="col-md-3 col-lg-2 sidebar">
+      <div class="d-flex align-items-center gap-2 mb-4 text-white">
+        <i class="fa-solid fa-industry text-warning fs-3"></i>
+        <h5 class="mb-0 fw-bold">SteelCraft Docs</h5>
+      </div>
+      <div class="small text-uppercase fw-bold text-muted mb-2">Getting Started</div>
+      <a href="#overview" class="active">Overview</a>
+      <a href="#structure">Folder Structure</a>
+      <a href="#pages">Pages Included</a>
+      
+      <div class="small text-uppercase fw-bold text-muted mt-4 mb-2">Customization</div>
+      <a href="#branding">Colors & Typography</a>
+      <a href="#theming">Light & Dark Mode</a>
+      <a href="#rtl">LTR & RTL Support</a>
+      
+      <div class="small text-uppercase fw-bold text-muted mt-4 mb-2">Interactions</div>
+      <a href="#forms">Forms & Backend API</a>
+      <a href="#gallery">Portfolio & Lightbox</a>
+      
+      <div class="small text-uppercase fw-bold text-muted mt-4 mb-2">Support</div>
+      <a href="#credits">Credits & License</a>
+    </div>
+
+    <!-- Main Documentation Content -->
+    <div class="col-md-9 col-lg-10 doc-content">
+      <!-- Section 1: Overview -->
+      <section id="overview" class="doc-section">
+        <span class="badge badge-accent px-3 py-2 mb-2">Commercial Marketplace Edition</span>
+        <h1 class="display-5 fw-bold mb-3">SteelCraft - Steel Fabrication & Structural Works HTML Template</h1>
+        <p class="lead text-muted">
+          Welcome to the official developer and customer documentation for <strong>SteelCraft</strong>. SteelCraft is a premium, modern, fully responsive multi-purpose HTML5/CSS3 template engineered for heavy industrial contractors, structural engineering firms, pre-engineered metal building fabricators, and welding works.
+        </p>
+
+        <div class="row g-3 my-4">
+          <div class="col-sm-6 col-md-3">
+            <div class="p-3 bg-light rounded border">
+              <strong>15 HTML Pages</strong>
+              <div class="small text-muted">Complete site coverage</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="p-3 bg-light rounded border">
+              <strong>2 Distinct Homepages</strong>
+              <div class="small text-muted">Industrial & Engineering</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="p-3 bg-light rounded border">
+              <strong>Light & Dark Modes</strong>
+              <div class="small text-muted">Saved to localStorage</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="p-3 bg-light rounded border">
+              <strong>Full LTR & RTL</strong>
+              <div class="small text-muted">Bilingual ready</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Folder Structure -->
+      <section id="structure" class="doc-section">
+        <h2>Folder Structure</h2>
+        <p>The package follows an organized, standard web template structure:</p>
+        <pre><code>steel-fabrication-template/
+├── index.html                  # Home 1 - General Industrial Landing Page
+├── home-2.html                 # Home 2 - Specialized Structural Steel Engineering
+├── about.html                  # About Us, History, Milestones & Team
+├── services.html               # All 10 Core Services Listing
+├── service-details.html        # Comprehensive Reusable Service Details
+├── projects.html               # Project Portfolio with Category Filter Tabs
+├── gallery.html                # Visual Gallery with Interactive Lightbox
+├── blog.html                   # Blog Articles with Live Search & Categories
+├── blog-details.html           # Single Article Details, TOC & Comments
+├── contact.html                # Contact Us & Project RFQ with File Upload
+├── pricing.html                # Transparent Pricing Tiers & Comparison Matrix
+├── login.html                  # Client / Partner Portal Login
+├── register.html               # Account Registration with Password Strength
+├── 404.html                    # Industrial 404 Error Page
+├── coming-soon.html            # Coming Soon / Maintenance with Countdown Timer
+├── assets/
+│   ├── css/
+│   │   ├── style.css           # Core Design System, Variables & Light/Dark Engine
+│   │   └── rtl.css             # Right-to-Left (RTL) Layout Mirroring
+│   ├── js/
+│   │   ├── main.js             # Theme Engine, RTL Switch, Sticky Navbar & Counters
+│   │   ├── portfolio-gallery.js# Filter Tabs & Custom Lightbox Modal
+│   │   ├── forms.js            # Validation Engine & Drag-and-Drop File Upload
+│   │   └── countdown.js        # Live Coming Soon Countdown Timer
+│   └── images/                 # Curated, Local High-Resolution Industrial Images
+└── documentation/
+    └── index.html              # Template Documentation Guide</code></pre>
+      </section>
+
+      <!-- Section 3: Pages Included -->
+      <section id="pages" class="doc-section">
+        <h2>Included Pages & Descriptions</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Page File</th>
+                <th>Purpose</th>
+                <th>Key Interactive Features</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>index.html</code></td>
+                <td>Home Page 1 - General Industrial Landing</td>
+                <td>Cinematic hero, stats counters, service cards, project filter, why choose us, testimonials ticker.</td>
+              </tr>
+              <tr>
+                <td><code>home-2.html</code></td>
+                <td>Home Page 2 - Structural Steel Engineering</td>
+                <td>Split-layout CAD hero, 6-stage timeline, technical specs table, direct RFQ form.</td>
+              </tr>
+              <tr>
+                <td><code>about.html</code></td>
+                <td>Company Profile & Leadership</td>
+                <td>Milestone timeline, leadership cards with social links, AISC & ISO accreditation grid.</td>
+              </tr>
+              <tr>
+                <td><code>services.html</code></td>
+                <td>Services Listing</td>
+                <td>All 10 required services with individual images, bullet features, and links.</td>
+              </tr>
+              <tr>
+                <td><code>service-details.html</code></td>
+                <td>Detailed Service Page</td>
+                <td>Machinery specs table, 4-step process, FAQ accordion, RFQ request button.</td>
+              </tr>
+              <tr>
+                <td><code>projects.html</code></td>
+                <td>Projects Portfolio</td>
+                <td>Category filters (Structural, Sheds, Commercial, Heavy, Welding, Custom Metal).</td>
+              </tr>
+              <tr>
+                <td><code>gallery.html</code></td>
+                <td>Industrial Image Gallery</td>
+                <td>Full JavaScript lightbox (prev, next, close, zoom, keyboard controls), category filters.</td>
+              </tr>
+              <tr>
+                <td><code>blog.html</code></td>
+                <td>Industry Technical Journal</td>
+                <td>Live JavaScript search box, category filters, recent posts, pagination.</td>
+              </tr>
+              <tr>
+                <td><code>blog-details.html</code></td>
+                <td>Single Article Details</td>
+                <td>Table of contents, code/chemical formulas, author bio, comment submission form.</td>
+              </tr>
+              <tr>
+                <td><code>contact.html</code></td>
+                <td>Contact & Project Proposal</td>
+                <td>Interactive Google Map, General inquiry form, Project RFQ with file drag-and-drop.</td>
+              </tr>
+              <tr>
+                <td><code>pricing.html</code></td>
+                <td>Transparent Pricing & Tiers</td>
+                <td>Tier cards (Basic, Engineered, Turnkey), comparison matrix, pricing FAQ accordion.</td>
+              </tr>
+              <tr>
+                <td><code>login.html</code></td>
+                <td>Client Portal Login</td>
+                <td>Password visibility toggle, Google SSO button, remember me, validation.</td>
+              </tr>
+              <tr>
+                <td><code>register.html</code></td>
+                <td>Account Registration</td>
+                <td>Password strength meter, password confirm check, terms acceptance.</td>
+              </tr>
+              <tr>
+                <td><code>404.html</code></td>
+                <td>404 Error Page</td>
+                <td>Industrial hazard graphics, quick navigation buttons, search links.</td>
+              </tr>
+              <tr>
+                <td><code>coming-soon.html</code></td>
+                <td>Coming Soon / Maintenance</td>
+                <td>Live JavaScript countdown timer (Days, Hours, Min, Sec), newsletter form.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 4: Branding & Colors -->
+      <section id="branding" class="doc-section">
+        <h2>Colors & Typography</h2>
+        <p>All colors are centrally managed in <code>assets/css/style.css</code> via CSS Variables:</p>
+        <pre><code>:root {
+  /* Brand Palette */
+  --primary: #142B45;        /* Deep Navy Blue */
+  --secondary: #64748B;      /* Steel Grey */
+  --accent: #F97316;         /* Industrial Safety Orange */
+  --accent-hover: #EA580C;
+  --bg-body: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --text-main: #1E293B;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+}</code></pre>
+        <p>To change the safety orange accent color throughout the entire template, simply edit <code>--accent</code> in <code>assets/css/style.css</code>.</p>
+      </section>
+
+      <!-- Section 5: Theming (Light/Dark) -->
+      <section id="theming" class="doc-section">
+        <h2>Light and Dark Mode Engine</h2>
+        <p>
+          The template features a persistent theme toggle button in the header. The theme state is stored in the browser's <code>localStorage</code> under the key <code>steelcraft_theme</code>.
+        </p>
+        <p>To force dark mode by default on your server, simply set the attribute on the <code>&lt;html&gt;</code> element:</p>
+        <pre><code>&lt;html lang="en" data-theme="dark" data-bs-theme="dark"&gt;</code></pre>
+      </section>
+
+      <!-- Section 6: LTR & RTL Layouts -->
+      <section id="rtl" class="doc-section">
+        <h2>LTR & RTL Direction Support</h2>
+        <p>
+          SteelCraft supports Right-to-Left (RTL) languages like Arabic, Hebrew, and Persian. Clicking the "RTL" button mirrors all margins, breadcrumbs, icons, offcanvas drawers, and form alignments automatically.
+        </p>
+        <p>To serve an RTL page natively, set:</p>
+        <pre><code>&lt;html lang="ar" dir="rtl"&gt;</code></pre>
+      </section>
+
+      <!-- Section 7: Forms & Backend API Integration -->
+      <section id="forms" class="doc-section">
+        <h2>Forms & Backend API Integration</h2>
+        <p>
+          All forms (Contact, Project RFP, Login, Register, Newsletter) contain client-side validation and responsive feedback alerts.
+        </p>
+        <p>To wire up the Project RFQ form to your REST API or backend script (Node.js, PHP, Python, Webhook):</p>
+        <ol>
+          <li>Open <code>assets/js/forms.js</code>.</li>
+          <li>Locate <code>projectEnquiryForm.addEventListener('submit', ...)</code>.</li>
+          <li>Replace the <code>setTimeout</code> block with your <code>fetch()</code> or <code>axios</code> call:</li>
+        </ol>
+        <pre><code>// Example Backend API Integration in assets/js/forms.js:
+const formData = new FormData(projectEnquiryForm);
+
+fetch('/api/v1/enquiries', {
+  method: 'POST',
+  body: formData
+})
+.then(response => response.json())
+.then(data => {
+  // Show success alert
+  document.getElementById('projectFormAlert').className = 'form-alert success d-block';
+  document.getElementById('projectFormAlert').innerHTML = '&lt;strong&gt;Success!&lt;/strong&gt; Your quote reference is ' + data.id;
+  projectEnquiryForm.reset();
+})
+.catch(error => {
+  console.error('API Error:', error);
+});</code></pre>
+      </section>
+
+      <!-- Section 8: Credits & License -->
+      <section id="credits" class="doc-section">
+        <h2>Credits & Dependencies</h2>
+        <ul>
+          <li><strong>Bootstrap 5.3.3:</strong> Core responsive grid and UI components (<a href="https://getbootstrap.com" target="_blank">getbootstrap.com</a>)</li>
+          <li><strong>Font Awesome 6.5.2:</strong> Vector iconography (<a href="https://fontawesome.com" target="_blank">fontawesome.com</a>)</li>
+          <li><strong>Google Fonts:</strong> 'Barlow' & 'Plus Jakarta Sans' (<a href="https://fonts.google.com" target="_blank">fonts.google.com</a>)</li>
+          <li><strong>Unsplash Photography:</strong> Free commercial licenses for industrial steel imagery</li>
+        </ul>
+        <p class="mt-4 text-muted small">
+          &copy; 2026 SteelCraft. All Rights Reserved. Designed for commercial marketplace distribution.
+        </p>
+      </section>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

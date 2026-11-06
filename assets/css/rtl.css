@@ -1,0 +1,145 @@
+/**
+ * SteelCraft - RTL Stylesheet
+ * Handles Complete Right-to-Left (RTL) Layout Mirroring
+ */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-body);
+}
+
+/* Subtitle Badge & Borders */
+[dir="rtl"] .section-subtitle {
+  border-left: none;
+  border-right: 3px solid var(--accent);
+}
+
+[dir="rtl"] .hero-floating-card,
+[dir="rtl"] .tech-spec-badge {
+  border-left: none;
+  border-right: 4px solid var(--accent);
+}
+
+[dir="rtl"] .tech-spec-badge {
+  left: auto;
+  right: 24px;
+}
+
+/* Feature Boxes */
+[dir="rtl"] .feature-icon-wrap {
+  border-left: none;
+  border-right: 3px solid var(--accent);
+}
+
+/* Back to Top Button */
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 30px;
+}
+
+/* Navbars & Dropdowns */
+[dir="rtl"] .navbar-nav {
+  padding-right: 0;
+}
+
+[dir="rtl"] .navbar-custom .nav-item.dropdown .dropdown-menu-custom {
+  left: auto !important;
+  right: 0 !important;
+}
+
+[dir="rtl"] .dropdown-menu-custom .dropdown-item:hover,
+[dir="rtl"] .dropdown-menu-custom .dropdown-item.active {
+  padding-left: 20px;
+  padding-right: 24px;
+}
+
+/* Offcanvas Drawer */
+[dir="rtl"] .offcanvas-end {
+  right: auto !important;
+  left: 0 !important;
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .offcanvas-end.show {
+  transform: none;
+}
+
+/* Testimonial Quote Icon */
+[dir="rtl"] .testimonial-card::before {
+  right: auto;
+  left: 25px;
+  transform: scaleX(-1);
+}
+
+/* Icons & Directional Arrows */
+[dir="rtl"] .fa-arrow-right,
+[dir="rtl"] .fa-chevron-right,
+[dir="rtl"] .fa-angle-right {
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+[dir="rtl"] .footer-links li a:hover {
+  transform: translateX(-4px);
+}
+
+[dir="rtl"] .category-list li a:hover {
+  padding-left: 0;
+  padding-right: 8px;
+}
+
+/* Badges on Cards */
+[dir="rtl"] .service-card-badge {
+  right: auto;
+  left: 15px;
+}
+
+[dir="rtl"] .blog-card-date {
+  left: auto;
+  right: 15px;
+}
+
+/* Footer widget title bar */
+[dir="rtl"] .footer-widget-title::after {
+  left: auto;
+  right: 0;
+}
+
+/* Lightbox controls */
+[dir="rtl"] .lightbox-prev {
+  left: auto;
+  right: 25px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+[dir="rtl"] .lightbox-next {
+  right: auto;
+  left: 25px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+[dir="rtl"] .lightbox-close {
+  right: auto;
+  left: 25px;
+}
+
+/* Table Alignment */
+[dir="rtl"] .spec-table th,
+[dir="rtl"] .spec-table td {
+  text-align: right;
+}
+
+/* Milestones Pipeline RTL */
+[dir="rtl"] .milestones-pipeline::before {
+  left: 8%;
+  right: 8%;
+  background: linear-gradient(270deg, 
+    rgba(249, 115, 22, 0.3) 0%, 
+    var(--accent) 50%, 
+    rgba(249, 115, 22, 0.4) 100%
+  );
+}
