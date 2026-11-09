@@ -3170,6 +3170,9 @@ ul {
   flex-grow: 1;
   margin-bottom: 0;
   line-height: 1.6;
+
+  min-height: 4.8rem;
+
 }
 
 .row > [class*="col-"] > .timeline-step {
