@@ -304,37 +304,108 @@
 
         <!-- Sidebar Column -->
         <div class="col-lg-4">
-          <!-- Search Widget -->
-          <div class="sidebar-widget">
-            <h4 class="sidebar-title">Search Journal</h4>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search topics...">
-              <button class="btn btn-primary-custom" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <div class="sidebar-sticky-wrap">
+            <!-- Search Widget -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-title">Search Journal</h4>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search topics, specs, AISC...">
+                <button class="btn btn-primary-custom" type="button" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
             </div>
-          </div>
 
-          <!-- Related Articles -->
-          <div class="sidebar-widget">
-            <h4 class="sidebar-title">Related Whitepapers</h4>
-            <div class="mb-3 pb-3 border-bottom border-light-subtle">
-              <small class="text-accent fw-bold">Oct 28, 2026</small>
-              <h6 class="mb-0"><a href="blog-details.html" class="text-main">Why Tekla 3D Detailing Eliminates 98% of Jobsite Clashes</a></h6>
+            <!-- Technical Categories -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-title">Technical Categories</h4>
+              <ul class="category-list">
+                <li><a href="blog.html"><span class="text-main">Material Science & Metallurgy</span> <span class="badge bg-alt text-muted border">14</span></a></li>
+                <li><a href="blog.html"><span class="text-main">3D BIM & Tekla Detailing</span> <span class="badge bg-alt text-muted border">18</span></a></li>
+                <li><a href="blog.html"><span class="text-main">Submerged Arc & NDT Welding</span> <span class="badge bg-alt text-muted border">12</span></a></li>
+                <li><a href="blog.html"><span class="text-main">PEB Clear-Span Engineering</span> <span class="badge bg-alt text-muted border">16</span></a></li>
+                <li><a href="blog.html"><span class="text-main">Heavy Crane Bays & Runways</span> <span class="badge bg-alt text-muted border">9</span></a></li>
+                <li><a href="blog.html"><span class="text-main">AISC 341 Seismic Provisions</span> <span class="badge bg-alt text-muted border">11</span></a></li>
+              </ul>
             </div>
-            <div class="mb-3 pb-3 border-bottom border-light-subtle">
-              <small class="text-accent fw-bold">Oct 14, 2026</small>
-              <h6 class="mb-0"><a href="blog-details.html" class="text-main">Submerged Arc Welding Quality Standards for Heavy Girders</a></h6>
-            </div>
-            <div>
-              <small class="text-accent fw-bold">Sep 29, 2026</small>
-              <h6 class="mb-0"><a href="blog-details.html" class="text-main">Optimizing PEB Clear-Span Warehouse Designs</a></h6>
-            </div>
-          </div>
 
-          <!-- Need a Quote CTA -->
-          <div class="sidebar-widget bg-dark-industrial text-white p-4">
-            <h4 class="text-white mb-2"><i class="fa-solid fa-calculator text-accent me-2"></i>Project Estimates</h4>
-            <p class="small text-secondary-light">Need an expert take-off on your structural package? Connect with our chief estimation team.</p>
-            <a href="contact.html#project-quote" class="btn btn-navy btn-sm w-100">Submit Drawings (RFQ)</a>
+            <!-- Related Articles -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-title">Related Whitepapers</h4>
+              <div class="d-flex align-items-center gap-3 mb-3 pb-3 border-bottom border-light-subtle">
+                <img src="assets/images/tekla-3d-detailing.jpg" alt="Tekla 3D Detailing" class="rounded" style="width: 65px; height: 60px; object-fit: cover;">
+                <div>
+                  <small class="text-accent fw-bold d-block">Oct 28, 2026</small>
+                  <h6 class="mb-0 fs-6"><a href="blog-details.html" class="text-main">Why Tekla 3D Detailing Eliminates 98% of Jobsite Clashes</a></h6>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-3 pb-3 border-bottom border-light-subtle">
+                <img src="assets/images/submerged-arc-welding.jpg" alt="Submerged Arc Welding" class="rounded" style="width: 65px; height: 60px; object-fit: cover;">
+                <div>
+                  <small class="text-accent fw-bold d-block">Oct 14, 2026</small>
+                  <h6 class="mb-0 fs-6"><a href="blog-details.html" class="text-main">Quality Protocols for Submerged Arc Welding of Heavy Girders</a></h6>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-3 pb-3 border-bottom border-light-subtle">
+                <img src="assets/images/peb-clear-span-designs.jpg" alt="PEB Clear-Span" class="rounded" style="width: 65px; height: 60px; object-fit: cover;">
+                <div>
+                  <small class="text-accent fw-bold d-block">Sep 29, 2026</small>
+                  <h6 class="mb-0 fs-6"><a href="blog-details.html" class="text-main">Optimizing PEB Clear-Span Warehouse Designs</a></h6>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="assets/images/plasma-vs-fiber-laser.jpg" alt="Plasma vs Laser" class="rounded" style="width: 65px; height: 60px; object-fit: cover;">
+                <div>
+                  <small class="text-accent fw-bold d-block">Sep 15, 2026</small>
+                  <h6 class="mb-0 fs-6"><a href="blog-details.html" class="text-main">High-Definition Plasma vs. Fiber Laser Cutting</a></h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download Technical Spec Sheet PDF Box -->
+            <div class="sidebar-widget p-4 bg-alt border border-light-subtle rounded">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="brand-logo-icon" style="width: 44px; height: 44px; min-width: 44px; font-size: 1.15rem;">
+                  <i class="fa-solid fa-file-pdf text-white"></i>
+                </div>
+                <div>
+                  <h5 class="h6 mb-0 text-main">Steel Grade Matrix (PDF)</h5>
+                  <small class="text-muted">ASTM A992 vs S355 Data</small>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">
+                Download chemical composition limits, Charpy V-notch energy curves, and weld preheat requirements.
+              </p>
+              <a href="contact.html#project-quote" class="btn btn-outline-custom w-100 btn-sm">
+                <i class="fa-solid fa-download me-2"></i>Download Spec Sheet
+              </a>
+            </div>
+
+            <!-- Need a Quote CTA -->
+            <div class="sidebar-widget bg-dark-industrial text-white p-4">
+              <h4 class="text-white mb-2"><i class="fa-solid fa-calculator text-accent me-2"></i>Project Estimates</h4>
+              <p class="small text-secondary-light mb-3">Need an expert take-off on your structural package? Connect with our chief estimation team.</p>
+              <div class="p-2 mb-3 rounded border border-light-subtle" style="background: rgba(255,255,255,0.05);">
+                <div class="d-flex align-items-center justify-content-between small text-white">
+                  <span><i class="fa-solid fa-phone text-accent me-1"></i> Direct Line:</span>
+                  <a href="tel:+18005557833" class="text-accent fw-bold">+1 (800) 555-STEEL</a>
+                </div>
+              </div>
+              <a href="contact.html#project-quote" class="btn btn-primary-custom w-100">Submit Drawings (RFQ) <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+
+            <!-- Technical Tags Cloud -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-title">Technical Tags</h4>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">ASTM A992</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">AISC 360</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">AWS D1.1</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">Tekla 3D</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">S355JR</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">W-Shapes</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">PEB Frames</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">NDT Inspection</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
