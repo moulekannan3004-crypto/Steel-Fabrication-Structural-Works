@@ -51,10 +51,17 @@
   right: 0 !important;
 }
 
+[dir="rtl"] .dropdown-menu-custom .dropdown-item {
+  border-left: none;
+  border-right: 3px solid transparent;
+}
+
 [dir="rtl"] .dropdown-menu-custom .dropdown-item:hover,
 [dir="rtl"] .dropdown-menu-custom .dropdown-item.active {
-  padding-left: 20px;
-  padding-right: 24px;
+  padding-right: 18px;
+  padding-left: 18px;
+  border-left: none;
+  border-right: 3px solid var(--accent);
 }
 
 /* Offcanvas Drawer */
@@ -142,4 +149,20 @@
     var(--accent) 50%, 
     rgba(249, 115, 22, 0.4) 100%
   );
+}
+
+/* Mobile Header Actions RTL */
+[dir="rtl"] .header-actions {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+[dir="rtl"] .header-actions .navbar-toggler {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Offcanvas in RTL */
+[dir="rtl"] .offcanvas-custom .navbar-nav .nav-link {
+  text-align: right !important;
 }
