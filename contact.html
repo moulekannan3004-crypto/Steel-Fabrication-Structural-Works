@@ -153,14 +153,14 @@
       <div class="row g-5">
         <!-- Column 1: General Contact Form -->
         <div class="col-lg-5">
-          <div class="bg-surface p-4 p-md-5 rounded shadow-sm border border-light-subtle mb-4">
+          <div class="bg-surface p-4 p-md-5 rounded shadow-sm border border-light-subtle h-100 d-flex flex-column">
             <div class="section-subtitle">
               <i class="fa-solid fa-paper-plane"></i> Quick Message
             </div>
             <h3 class="h3 mb-3">General Inquiries</h3>
             <p class="small text-muted mb-4">Have questions about our facility accreditations, site tours, or supplier procurement? Send a quick message.</p>
 
-            <form id="contactForm" novalidate>
+            <form id="contactForm" novalidate class="mb-4">
               <div class="mb-3">
                 <label for="cName" class="form-label">Your Name *</label>
                 <input type="text" class="form-control" id="cName" placeholder="e.g. John Doe" pattern="^[A-Za-z\s\.\-\']+$" title="Please enter letters only (no numbers)." required>
@@ -181,49 +181,48 @@
 
               <div class="mb-4">
                 <label for="cMessage" class="form-label">Message *</label>
-                <textarea class="form-control" id="cMessage" rows="5" placeholder="Your inquiry details..." required></textarea>
+                <textarea class="form-control" id="cMessage" rows="4" placeholder="Your inquiry details..." required></textarea>
                 <div class="invalid-feedback">Please enter your message.</div>
               </div>
 
               <button type="submit" class="btn btn-navy w-100">Send Inquiry</button>
               <div id="contactFormAlert" class="form-alert mt-3"></div>
             </form>
-          </div>
 
-          <!-- Engineering Estimating & Support SLA Card -->
-          <div class="bg-surface p-4 rounded shadow-sm border border-light-subtle">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="brand-logo-icon" style="width: 44px; height: 44px; min-width: 44px; font-size: 1.15rem;">
-                <i class="fa-solid fa-bolt text-white"></i>
+            <!-- Fast-Track Estimating SLA & Technical Support (Anchored to Bottom) -->
+            <div class="mt-auto pt-4 border-top border-light-subtle">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="brand-logo-icon" style="width: 42px; height: 42px; min-width: 42px; font-size: 1.1rem;">
+                  <i class="fa-solid fa-bolt text-white"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-0 text-main">Fast-Track Technical Bidding</h4>
+                  <small class="text-accent fw-bold"><i class="fa-regular fa-clock me-1"></i>24–48 Hour Turnaround SLA</small>
+                </div>
               </div>
-              <div>
-                <h4 class="h6 mb-1 text-main">Fast-Track Technical Bidding</h4>
-                <small class="text-accent fw-bold"><i class="fa-regular fa-clock me-1"></i>24–48 Hour Turnaround SLA</small>
+
+              <div class="p-3 rounded bg-alt border border-light-subtle mb-3">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="small fw-semibold text-main"><i class="fa-solid fa-phone text-accent me-2"></i>Estimating Desk:</span>
+                  <a href="tel:+18005557833" class="small fw-bold text-accent">+1 (800) 555-STEEL</a>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="small fw-semibold text-main"><i class="fa-solid fa-shield-halved text-accent me-2"></i>Confidentiality:</span>
+                  <span class="small text-muted">Strict NDA Protected</span>
+                </div>
               </div>
-            </div>
-            <p class="small text-muted mb-3">
-              Direct engineering review for all structural steel inquiries. Rapid estimation available for urgent bid dates, AISC member schedules, and turnkey commercial EPC RFQs.
-            </p>
-            <div class="p-3 rounded bg-alt border border-light-subtle mb-3">
-              <div class="d-flex align-items-center justify-content-between mb-2">
-                <span class="small fw-semibold text-main"><i class="fa-solid fa-phone text-accent me-2"></i>Estimating Desk:</span>
-                <a href="tel:+18005557833" class="small fw-bold text-accent">+1 (800) 555-STEEL</a>
+
+              <div class="d-flex align-items-center gap-2 text-muted small">
+                <i class="fa-solid fa-circle-check text-success"></i>
+                <span>Tekla Structures 3D BIM & DSTV automated takeoff ready</span>
               </div>
-              <div class="d-flex align-items-center justify-content-between">
-                <span class="small fw-semibold text-main"><i class="fa-solid fa-shield-halved text-accent me-2"></i>Confidentiality:</span>
-                <span class="small text-muted">Strict NDA Protected</span>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-2 text-muted small">
-              <i class="fa-solid fa-circle-check text-success"></i>
-              <span>Tekla Structures 3D BIM & DSTV automated takeoff ready</span>
             </div>
           </div>
         </div>
 
         <!-- Column 2: Dedicated Technical Project Enquiry Form with File Attachment -->
         <div class="col-lg-7" id="project-quote">
-          <div class="bg-surface p-4 p-md-5 rounded shadow-sm border border-light-subtle">
+          <div class="bg-surface p-4 p-md-5 rounded shadow-sm border border-light-subtle h-100 d-flex flex-column">
             <div class="section-subtitle">
               <i class="fa-solid fa-calculator"></i> Detailed Estimation
             </div>
