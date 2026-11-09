@@ -5697,3 +5697,32 @@ ul {
 
 }
 
+
+
+/* RTL Toggle Button Styling (LTR - RTL) */
+.header-actions .rtl-toggle-btn {
+  padding: 0 14px !important;
+  font-size: 0.78rem !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  background: var(--bg-alt);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  height: 42px !important;
+  min-height: 42px !important;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap !important;
+  transition: all var(--transition-fast);
+}
+
+.header-actions .rtl-toggle-btn:hover,
+.header-actions .rtl-toggle-btn.active,
+[dir="rtl"] .header-actions .rtl-toggle-btn {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #FFFFFF !important;
+}

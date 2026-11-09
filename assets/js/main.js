@@ -56,12 +56,15 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('steelcraft_dir', dir);
 
     rtlToggleBtns.forEach(btn => {
+      btn.innerHTML = '<span>LTR - RTL</span>';
       if (dir === 'rtl') {
-        btn.innerHTML = '<span>LTR</span>';
-        btn.setAttribute('title', 'Switch to Left-to-Right');
+        btn.classList.add('active');
+        btn.setAttribute('title', 'Direction: RTL (Click to switch to LTR)');
+        btn.setAttribute('aria-label', 'Direction: RTL (Click to switch to LTR)');
       } else {
-        btn.innerHTML = '<span>RTL</span>';
-        btn.setAttribute('title', 'Switch to Right-to-Left');
+        btn.classList.remove('active');
+        btn.setAttribute('title', 'Direction: LTR (Click to switch to RTL)');
+        btn.setAttribute('aria-label', 'Direction: LTR (Click to switch to RTL)');
       }
     });
   }

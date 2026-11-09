@@ -1,743 +1,1482 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SteelCraft - Industrial Steel Fabrication & Structural Engineering Works</title>
-  <meta name="description" content="Global leaders in structural steel fabrication, heavy metal manufacturing, industrial sheds, and PEB engineering works with ISO 9001 & AISC certifications.">
-  <meta name="keywords" content="steel fabrication, structural steel, industrial sheds, PEB buildings, CNC cutting, metal welding, heavy engineering">
-
-  <!-- Open Graph / Meta -->
-  <meta property="og:title" content="SteelCraft - Steel Fabrication & Structural Works">
-  <meta property="og:description" content="Premium Industrial Steel Fabrication and Structural Engineering Contractor.">
-  <meta property="og:type" content="website">
-
-    <!-- Favicon / Brand Logo Tab Icon -->
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <link rel="apple-touch-icon" href="assets/images/favicon-apple.png">
-
-  <!-- CSS Dependencies -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  
-  <!-- Custom Template Styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/rtl.css">
-</head>
-<body>
-
-  <!-- Main Navigation -->
-  <nav class="navbar navbar-expand-xl navbar-custom">
-    <div class="container-fluid px-3 px-xl-5">
-      <a class="brand-logo" href="index.html">
-        <div class="brand-logo-icon">
-          <i class="fa-solid fa-industry"></i>
-        </div>
-        <div>STEEL<span class="accent">CRAFT</span></div>
-      </a>
-
-      <!-- Header Action Controls (Theme, RTL, Mobile Toggle) -->
-      <div class="header-actions order-xl-3">
-        <!-- Theme Switcher -->
-        <button class="theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-
-        <!-- LTR/RTL Switcher -->
-        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction" aria-label="Switch Direction">
-          <span>RTL</span>
-        </button>
-
-        <!-- Get a Quote Button -->
-        <a href="contact.html#project-quote" class="btn btn-primary-custom d-none d-sm-inline-flex ms-2">
-          <span>Get a Quote</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-        <!-- Mobile Hamburger -->
-        <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars fa-lg text-main"></i>
-        </button>
-      </div>
-
-      <!-- Desktop Nav Items -->
-      <div class="collapse navbar-collapse order-xl-2 justify-content-center" id="desktopNav">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Home 1 <i class="fa-solid fa-angle-down ms-1 dropdown-caret-icon"></i></a>
-          <ul class="dropdown-menu dropdown-menu-custom">
-            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
-            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
-          </ul>
-        </li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ==========================================================================
-       MOBILE OFFCANVAS DRAWER
-       ========================================================================== -->
-  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-    <div class="offcanvas-header border-bottom">
-      <div class="brand-logo" id="mobileMenuLabel">
-        <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
-        <div>STEEL<span class="accent">CRAFT</span></div>
-      </div>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-            <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Home 1 <i class="fa-solid fa-angle-down ms-1 dropdown-caret-icon"></i></a>
-          <ul class="dropdown-menu dropdown-menu-custom">
-            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
-            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-      </ul>
-      <div class="mt-4 pt-3 border-top">
-        <div class="d-flex align-items-center gap-3 mb-3">
-          <i class="fa-solid fa-phone text-accent"></i>
-          <span class="fw-bold">+1 (800) 555-STEEL</span>
-        </div>
-        <a href="contact.html#project-quote" class="btn btn-primary-custom w-100">Request Technical Quote</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ==========================================================================
-       HOME 1 HERO SECTION: Full-width Cinematic Industrial Hero
-       ========================================================================== -->
-  <header class="hero-home-1">
-    <div class="container position-relative" style="z-index: 2;">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-10 col-xl-9">
-          <div class="section-subtitle justify-content-center mx-auto mb-4">
-            <i class="fa-solid fa-shield-halved"></i> AISC & ISO 9001:2015 Certified Fabricators
-          </div>
-          <h1 class="hero-title text-center">PRECISION STEEL FABRICATION & STRUCTURAL WORKS</h1>
-          <p class="hero-lead mx-auto text-center">
-            Engineering the future of heavy industry with high-capacity structural steel fabrication, pre-engineered buildings, robotic welding, and turnkey on-site erection.
-          </p>
-          <div class="d-flex justify-content-center flex-wrap gap-3">
-            <a href="contact.html#project-quote" class="btn btn-primary-custom">
-              <span>Get a Technical Quote</span>
-              <i class="fa-solid fa-calculator"></i>
-            </a>
-            <a href="projects.html" class="btn btn-outline-light-custom">
-              <span>Explore Projects</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- ==========================================================================
-       KEY BUSINESS STATISTICS & ACHIEVEMENTS
-       ========================================================================== -->
-  <section class="section-padding-sm bg-surface border-bottom">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-6 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-            <div class="counter-number" data-count="35" data-suffix="+">0</div>
-            <p class="counter-label">Years of Excellence</p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-icon"><i class="fa-solid fa-building-circle-check"></i></div>
-            <div class="counter-number" data-count="1280" data-suffix="+">0</div>
-            <p class="counter-label">Projects Completed</p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-icon"><i class="fa-solid fa-weight-hanging"></i></div>
-            <div class="counter-number" data-count="95000" data-suffix=" MT">0</div>
-            <p class="counter-label">Steel Fabricated & Erected</p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-icon"><i class="fa-solid fa-medal"></i></div>
-            <div class="counter-number" data-count="100" data-suffix="%">0</div>
-            <p class="counter-label">OSHA Safety Compliance</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       COMPANY INTRODUCTION SECTION
-       ========================================================================== -->
-  <section class="section-padding bg-alt">
-    <div class="container">
-      <div class="row align-items-stretch g-5">
-        <div class="col-lg-6 d-flex flex-column">
-          <div class="equal-height-img-wrap shadow-lg">
-            <img src="assets/images/about-intro.jpg" alt="Steel Fabrication Workshop and Engineering Team">
-            <div class="tech-spec-badge d-none d-sm-block" style="bottom: 24px; left: 24px; z-index: 3;">
-              <div class="number">AISC</div>
-              <div class="label">Certified Building Fabricator</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-between">
-          <div>
-            <div class="section-subtitle">
-              <i class="fa-solid fa-gear"></i> Built for Heavy Industry
-            </div>
-            <h2 class="section-title">ENGINEERING STRUCTURAL EXCELLENCE FOR OVER THREE DECADES</h2>
-            <p>
-              SteelCraft is a premier structural steel fabrication and erection contractor. Operating from a modernized 180,000 sq. ft. fabrication facility, we specialize in high-complexity structural steel frameworks, pre-engineered metal buildings, heavy plate girders, and turnkey industrial installations.
-            </p>
-            <p>
-              Combining 3D BIM detailing in Tekla Structures with advanced CNC automated beam lines, submerged arc welding, and certified NDT quality control, we ensure every joint, weld, and bolt conforms to stringent international building codes.
-            </p>
-            
-            <div class="row g-3 my-3">
-              <div class="col-sm-6">
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa-solid fa-check text-accent fw-bold"></i>
-                  <span class="fw-semibold">AWS Certified Welding Inspectors</span>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa-solid fa-check text-accent fw-bold"></i>
-                  <span class="fw-semibold">Automated Shot-Blasting & Painting</span>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa-solid fa-check text-accent fw-bold"></i>
-                  <span class="fw-semibold">Tekla 3D Detailing & BIM Level 2</span>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa-solid fa-check text-accent fw-bold"></i>
-                  <span class="fw-semibold">Turnkey Structural Site Erection</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="d-flex align-items-center gap-4 pt-3 mt-3 border-top border-secondary border-opacity-10">
-            <a href="about.html" class="btn btn-navy">Company Profile & Milestones</a>
-            <div class="d-flex align-items-center gap-3">
-              <img src="assets/images/team-1.jpg" alt="CEO Signature" class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
-              <div>
-                <h6 class="mb-0 fw-bold">Marcus Vance</h6>
-                <small class="text-muted">Chief Executive & PE</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       MANUFACTURING CAPABILITIES & PLANT EQUIPMENT
-       ========================================================================== -->
-  <section class="section-padding bg-dark-industrial">
-    <div class="container">
-      <div class="row align-items-stretch g-5">
-        <div class="col-lg-6 d-flex flex-column justify-content-between">
-          <div>
-            <div class="section-subtitle text-accent">
-              <i class="fa-solid fa-microchip"></i> High-Tech Facility
-            </div>
-            <h2 class="section-title text-white">WORLD-CLASS PLANT EQUIPMENT & CAPACITY</h2>
-            <p class="text-secondary-light">
-              Our state-of-the-art Houston manufacturing facility utilizes modern European and American automated CNC equipment to maximize output, reduce fabrication cycle times, and achieve microscopic tolerances.
-            </p>
-
-            <div class="row g-4 mt-2">
-              <div class="col-sm-6">
-                <div class="dark-panel-card p-3 h-100">
-                  <h5 class="text-accent mb-1"><i class="fa-solid fa-crosshairs me-2"></i>CNC Beam Line</h5>
-                  <p class="text-secondary-light small mb-0">High-speed 3-spindle drilling, coping, and automated robotic plasma marking.</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="dark-panel-card p-3 h-100">
-                  <h5 class="text-accent mb-1"><i class="fa-solid fa-arrows-split-up-and-left me-2"></i>1000T Brake Press</h5>
-                  <p class="text-secondary-light small mb-0">Extreme-tonnage hydraulic bending for structural cones, transition sections, and thick plates.</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="dark-panel-card p-3 h-100">
-                  <h5 class="text-accent mb-1"><i class="fa-solid fa-spray-can me-2"></i>Automated Blasting</h5>
-                  <p class="text-secondary-light small mb-0">Continuous centrifugal shot blaster providing SA 2.5 surface profile with epoxy paint bays.</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="dark-panel-card p-3 h-100">
-                  <h5 class="text-accent mb-1"><i class="fa-solid fa-shield-virus me-2"></i>Certified NDT Lab</h5>
-                  <p class="text-secondary-light small mb-0">In-house Radiographic (RT), Ultrasonic (UT), and Magnetic Particle (MPI) testing.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 d-flex flex-column">
-          <div class="equal-height-img-wrap border border-secondary border-opacity-25 shadow-lg">
-            <img src="assets/images/gallery-4.jpg" alt="Automated Heavy Plate Brake Press and Fabrication Shop Floor">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       INDUSTRIES WE SERVE
-       ========================================================================== -->
-  <section class="section-padding bg-alt">
-    <div class="container">
-      <div class="text-center max-w-700 mx-auto mb-5">
-        <div class="section-subtitle">
-          <i class="fa-solid fa-network-wired"></i> Sector Solutions
-        </div>
-        <h2 class="section-title">INDUSTRIES POWERED BY OUR STEEL</h2>
-        <p class="text-muted">
-          Delivering specialized structural steel conforming to sector-specific certifications, seismic parameters, and heavy load criteria.
-        </p>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-4 col-sm-6">
-          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
-            <i class="fa-solid fa-oil-well fa-3x text-accent mb-3"></i>
-            <h4 class="h5">Oil, Gas & Petrochemical</h4>
-            <p class="small text-muted mb-0">Modular process skids, pipe racks, furnace structural frames, and flare towers.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
-            <i class="fa-solid fa-warehouse fa-3x text-accent mb-3"></i>
-            <h4 class="h5">Warehousing & Logistics</h4>
-            <p class="small text-muted mb-0">Wide clear-span PEB distribution warehouses, mezzanine platforms, and crane buildings.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
-            <i class="fa-solid fa-bridge fa-3x text-accent mb-3"></i>
-            <h4 class="h5">Infrastructure & Bridges</h4>
-            <p class="small text-muted mb-0">Highway overpasses, pedestrian bridges, rail trusses, and heavy sign gantries.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
-            <i class="fa-solid fa-building fa-3x text-accent mb-3"></i>
-            <h4 class="h5">Commercial Real Estate</h4>
-            <p class="small text-muted mb-0">High-rise core columns, transfer girders, architectural steel canopies, and stairs.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
-            <i class="fa-solid fa-mountain fa-3x text-accent mb-3"></i>
-            <h4 class="h5">Mining & Heavy Manufacturing</h4>
-            <p class="small text-muted mb-0">Heavy conveyor galleries, crusher support structures, and industrial silos.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
-            <i class="fa-solid fa-ship fa-3x text-accent mb-3"></i>
-            <h4 class="h5">Marine & Offshore</h4>
-            <p class="small text-muted mb-0">Docks, shipyard cranes, barge load-out structures, and marine bulkhead pilings.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       CLIENT TESTIMONIALS
-       ========================================================================== -->
-  <section class="section-padding bg-surface">
-    <div class="container">
-      <div class="text-center max-w-700 mx-auto mb-5">
-        <div class="section-subtitle">
-          <i class="fa-solid fa-comments"></i> Verified Feedback
-        </div>
-        <h2 class="section-title">WHAT GENERAL CONTRACTORS SAY</h2>
-        <p class="text-muted">Hear from the EPC leaders and construction project directors who rely on SteelCraft.</p>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="testimonial-text">
-              "SteelCraft delivered 4,500 tons of structural steel for our automotive assembly plant 3 weeks ahead of schedule. Their Tekla 3D detailing was flawless—not a single field clash occurred during erection."
-            </p>
-            <div class="testimonial-author">
-              <img src="assets/images/avatar-1.jpg" alt="Robert Sterling" class="testimonial-avatar">
-              <div>
-                <h5 class="testimonial-name">Robert Sterling</h5>
-                <p class="testimonial-role">Senior VP of Construction, Apex Infra</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="testimonial-text">
-              "The quality of full-penetration welding and paint coating on the Gulf Coast marine skids passed every third-party ultrasonic inspection with zero defects. A truly professional team."
-            </p>
-            <div class="testimonial-author">
-              <img src="assets/images/avatar-2.jpg" alt="Sarah Lin" class="testimonial-avatar">
-              <div>
-                <h5 class="testimonial-name">Sarah Lin, PE</h5>
-                <p class="testimonial-role">Project Director, Energo Global</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="testimonial-text">
-              "Their erection crew executed a 75-meter clear-span PEB warehouse with exceptional safety standards. Highly recommend SteelCraft for any complex structural assignment."
-            </p>
-            <div class="testimonial-author">
-              <img src="assets/images/avatar-3.jpg" alt="Carlos Rodriguez" class="testimonial-avatar">
-              <div>
-                <h5 class="testimonial-name">Carlos Rodriguez</h5>
-                <p class="testimonial-role">Chief Engineer, Vanguard Logistics</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Trusted Client & Partner Logos -->
-      <div class="partner-showcase-wrap mt-5 pt-4 border-top border-secondary border-opacity-10">
-        <div class="text-center mb-4">
-          <span class="partner-section-label">
-            <i class="fa-solid fa-handshake text-accent me-2"></i>TRUSTED BY NORTH AMERICA'S LEADING EPC CONTRACTORS &amp; INFRASTRUCTURE BUILDERS
-          </span>
-        </div>
-
-        <div class="row g-3 g-lg-4 justify-content-center">
-          <!-- Partner 1: TITAN -->
-          <div class="col-6 col-sm-4 col-lg-2">
-            <div class="partner-brand-card">
-              <div class="brand-emblem">
-                <i class="fa-solid fa-cubes-stacked"></i>
-              </div>
-              <div class="brand-meta">
-                <span class="brand-title">TITAN</span>
-                <span class="brand-subtitle">INFRASTRUCTURE</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Partner 2: APEX -->
-          <div class="col-6 col-sm-4 col-lg-2">
-            <div class="partner-brand-card">
-              <div class="brand-emblem">
-                <i class="fa-solid fa-shapes"></i>
-              </div>
-              <div class="brand-meta">
-                <span class="brand-title">APEX</span>
-                <span class="brand-subtitle">STRUCTURAL PEB</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Partner 3: VORTEX -->
-          <div class="col-6 col-sm-4 col-lg-2">
-            <div class="partner-brand-card">
-              <div class="brand-emblem">
-                <i class="fa-solid fa-compass-drafting"></i>
-              </div>
-              <div class="brand-meta">
-                <span class="brand-title">VORTEX</span>
-                <span class="brand-subtitle">INDUSTRIAL EPC</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Partner 4: METALLIX -->
-          <div class="col-6 col-sm-4 col-lg-2">
-            <div class="partner-brand-card">
-              <div class="brand-emblem">
-                <i class="fa-solid fa-atom"></i>
-              </div>
-              <div class="brand-meta">
-                <span class="brand-title">METALLIX</span>
-                <span class="brand-subtitle">STEELWORKS</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Partner 5: AUSTEN -->
-          <div class="col-6 col-sm-4 col-lg-2">
-            <div class="partner-brand-card">
-              <div class="brand-emblem">
-                <i class="fa-solid fa-building-shield"></i>
-              </div>
-              <div class="brand-meta">
-                <span class="brand-title">AUSTEN</span>
-                <span class="brand-subtitle">OFFSHORE MARINE</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Partner 6: KINETIC -->
-          <div class="col-6 col-sm-4 col-lg-2">
-            <div class="partner-brand-card">
-              <div class="brand-emblem">
-                <i class="fa-solid fa-bolt-lightning"></i>
-              </div>
-              <div class="brand-meta">
-                <span class="brand-title">KINETIC</span>
-                <span class="brand-subtitle">ENERGY &amp; CIVIL</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       LATEST INDUSTRY BLOG ARTICLES
-       ========================================================================== -->
-  <section class="section-padding bg-alt">
-    <div class="container">
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
-        <div>
-          <div class="section-subtitle">
-            <i class="fa-solid fa-newspaper"></i> Technical Insights
-          </div>
-          <h2 class="section-title mb-0">LATEST STRUCTURAL ENGINEERING ARTICLES</h2>
-        </div>
-        <div class="mt-3 mt-md-0">
-          <a href="blog.html" class="btn btn-outline-custom">View All Technical Publications <i class="fa-solid fa-arrow-right ms-2"></i></a>
-        </div>
-      </div>
-
-      <div class="row g-4">
-        <!-- Blog 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="blog-card">
-            <div class="blog-card-img-wrap">
-              <img src="assets/images/blog-1.jpg" alt="High Strength Steel Grades">
-              <span class="blog-card-date">Nov 12, 2026</span>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">
-                <span><i class="fa-solid fa-user"></i> Marcus Vance</span>
-                <span><i class="fa-solid fa-tag"></i> Material Science</span>
-              </div>
-              <h3 class="blog-card-title"><a href="blog-details.html">Advances in ASTM A992 & S355 High-Strength Structural Steel</a></h3>
-              <p class="blog-card-desc">
-                Analyzing yield strength behaviors, seismic ductility factors, and weight savings in multi-tier high-rise frames.
-              </p>
-              <a href="blog-details.html" class="fw-bold text-accent">Read Full Article <i class="fa-solid fa-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Blog 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="blog-card">
-            <div class="blog-card-img-wrap">
-              <img src="assets/images/blog-2.jpg" alt="BIM and Tekla Modeling">
-              <span class="blog-card-date">Oct 28, 2026</span>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">
-                <span><i class="fa-solid fa-user"></i> Elena Rostova</span>
-                <span><i class="fa-solid fa-tag"></i> BIM & Detailing</span>
-              </div>
-              <h3 class="blog-card-title"><a href="blog-details.html">Why Tekla 3D Detailing Eliminates 98% of Jobsite Erection Clashes</a></h3>
-              <p class="blog-card-desc">
-                A technical comparison between traditional 2D drafting and cloud-synchronized 3D BIM connection engineering.
-              </p>
-              <a href="blog-details.html" class="fw-bold text-accent">Read Full Article <i class="fa-solid fa-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Blog 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="blog-card">
-            <div class="blog-card-img-wrap">
-              <img src="assets/images/blog-3.jpg" alt="Submerged Arc Welding Quality">
-              <span class="blog-card-date">Oct 14, 2026</span>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">
-                <span><i class="fa-solid fa-user"></i> David Chen, CWI</span>
-                <span><i class="fa-solid fa-tag"></i> Quality & NDT</span>
-              </div>
-              <h3 class="blog-card-title"><a href="blog-details.html">Essential Quality Protocols for Submerged Arc Welding of Heavy Girders</a></h3>
-              <p class="blog-card-desc">
-                Understanding flux selection, heat input boundaries, and ultrasonic non-destructive testing requirements under AWS D1.1.
-              </p>
-              <a href="blog-details.html" class="fw-bold text-accent">Read Full Article <i class="fa-solid fa-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       CALL TO ACTION BANNER
-       ========================================================================== -->
-  <section class="section-padding bg-accent text-white">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-8">
-          <h2 class="text-white display-6 fw-bold mb-2">READY TO COMMENCE YOUR NEXT STRUCTURAL BUILD?</h2>
-          <p class="mb-0 text-white text-opacity-90 lead">
-            Send us your CAD drawings or architectural tender specs for a prompt, transparent, and comprehensive quotation.
-          </p>
-        </div>
-        <div class="col-lg-4 text-lg-end">
-          <a href="contact.html#project-quote" class="btn btn-navy btn-lg shadow">
-            <span>Submit RFQ & Drawings</span>
-            <i class="fa-solid fa-file-arrow-up ms-2"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
-  <footer class="footer-main">
-    <div class="container">
-      <div class="row g-4">
-        <!-- Col 1: Brand & About (col-lg-4 col-md-6) -->
-        <div class="col-lg-3 col-md-6 col-brand-wrap">
-          <div class="footer-brand-wrap">
-            <div class="brand-logo">
-              <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
-              <div class="text-white">STEEL<span class="accent">CRAFT</span></div>
-            </div>
-          </div>
-          <p class="text-secondary-light">
-            AISC and ISO 9001:2015 certified steel fabrication and structural engineering contractor specializing in pre-engineered buildings and heavy industrial structures.
-          </p>
-          <div class="d-flex gap-2 mt-3">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          </div>
-        </div>
-
-        <!-- Col 2: Core Services Links (col-lg-2 col-md-3 col-6) -->
-        <div class="col-lg-3 col-md-6 col-6">
-          <h4 class="footer-widget-title">Core Services</h4>
-          <ul class="footer-links">
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Structural Steel</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Industrial Sheds</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Steel Buildings</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Welding Services</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> CNC Cutting</a></li>
-            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> All Services</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Quick Navigation (col-lg-2 col-md-3 col-6) -->
-        <div class="col-lg-3 col-md-6 col-6">
-          <h4 class="footer-widget-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
-            <li><a href="projects.html"><i class="fa-solid fa-angle-right"></i> Project Portfolio</a></li>
-            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Visual Gallery</a></li>
-            <li><a href="pricing.html"><i class="fa-solid fa-angle-right"></i> Pricing Packages</a></li>
-            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Technical Blog</a></li>
-            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Contact & Newsletter (col-lg-4 col-md-6) -->
-        <div class="col-lg-3 col-md-6">
-          <h4 class="footer-widget-title">Houston HQ</h4>
-          <div class="footer-contact-item">
-            <i class="fa-solid fa-map-location-dot"></i>
-            <div>
-              <strong class="text-white">Facility Address:</strong><br>
-              4528 Heavy Industry Pkwy, Houston, TX
-            </div>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fa-solid fa-phone-volume"></i>
-            <div>
-              <strong class="text-white">Phone Support:</strong><br>
-              <a href="tel:+18005553733">+1 (800) 555-STEEL</a>
-            </div>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fa-solid fa-envelope-open-text"></i>
-            <div>
-              <strong class="text-white">Technical Estimations:</strong><br>
-              <a href="mailto:quotes@steelcraft-works.com">quotes@steelcraft-works.com</a>
-            </div>
-          </div>
-
-          <form class="newsletter-form mt-2">
-            <div class="input-group">
-              <input type="email" class="form-control" placeholder="Corporate email..." required>
-              <button class="btn btn-primary-custom" type="submit">Join</button>
-            </div>
-            <div class="newsletter-feedback mt-1"></div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container text-center text-secondary-light small">
-        &copy; 2026 SteelCraft Industrial Works LLC. All rights reserved. AISC &amp; ISO 9001:2015 Certified Facility.
-      </div>
-    </div>
-  </footer>
-
-  <!-- JS Dependencies -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/portfolio-gallery.js"></script>
-  <script src="assets/js/forms.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SteelCraft - Industrial Steel Fabrication & Structural Engineering Works</title>
+
+  <meta name="description" content="Global leaders in structural steel fabrication, heavy metal manufacturing, industrial sheds, and PEB engineering works with ISO 9001 & AISC certifications.">
+
+  <meta name="keywords" content="steel fabrication, structural steel, industrial sheds, PEB buildings, CNC cutting, metal welding, heavy engineering">
+
+
+
+  <!-- Open Graph / Meta -->
+
+  <meta property="og:title" content="SteelCraft - Steel Fabrication & Structural Works">
+
+  <meta property="og:description" content="Premium Industrial Steel Fabrication and Structural Engineering Contractor.">
+
+  <meta property="og:type" content="website">
+
+
+
+    <!-- Favicon / Brand Logo Tab Icon -->
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <link rel="apple-touch-icon" href="assets/images/favicon-apple.png">
+
+
+
+  <!-- CSS Dependencies -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  
+
+  <!-- Custom Template Styles -->
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+</head>
+
+<body>
+
+
+
+  <!-- Main Navigation -->
+
+  <nav class="navbar navbar-expand-xl navbar-custom">
+
+    <div class="container-fluid px-3 px-xl-5">
+
+      <a class="brand-logo" href="index.html">
+
+        <div class="brand-logo-icon">
+
+          <i class="fa-solid fa-industry"></i>
+
+        </div>
+
+        <div>STEEL<span class="accent">CRAFT</span></div>
+
+      </a>
+
+
+
+      <!-- Header Action Controls (Theme, RTL, Mobile Toggle) -->
+
+      <div class="header-actions order-xl-3">
+
+        <!-- Theme Switcher -->
+
+        <button class="theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+
+          <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+
+
+        <!-- LTR/RTL Switcher -->
+
+        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction" aria-label="Switch Direction"><span>LTR - RTL</span></button>
+
+
+
+        <!-- Get a Quote Button -->
+
+        <a href="contact.html#project-quote" class="btn btn-primary-custom d-none d-sm-inline-flex ms-2">
+
+          <span>Get a Quote</span>
+
+          <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+
+        <!-- Mobile Hamburger -->
+
+        <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+
+          <i class="fa-solid fa-bars fa-lg text-main"></i>
+
+        </button>
+
+      </div>
+
+
+
+      <!-- Desktop Nav Items -->
+
+      <div class="collapse navbar-collapse order-xl-2 justify-content-center" id="desktopNav">
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Home 1 <i class="fa-solid fa-angle-down ms-1 dropdown-caret-icon"></i></a>
+
+          <ul class="dropdown-menu dropdown-menu-custom">
+
+            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+
+            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+
+          </ul>
+
+        </li>
+
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- ==========================================================================
+
+       MOBILE OFFCANVAS DRAWER
+
+       ========================================================================== -->
+
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+
+    <div class="offcanvas-header border-bottom">
+
+      <div class="brand-logo" id="mobileMenuLabel">
+
+        <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
+
+        <div>STEEL<span class="accent">CRAFT</span></div>
+
+      </div>
+
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+            <ul class="navbar-nav">
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Home 1 <i class="fa-solid fa-angle-down ms-1 dropdown-caret-icon"></i></a>
+
+          <ul class="dropdown-menu dropdown-menu-custom">
+
+            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+
+            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+
+          </ul>
+
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+      </ul>
+
+      <div class="mt-4 pt-3 border-top">
+
+        <div class="d-flex align-items-center gap-3 mb-3">
+
+          <i class="fa-solid fa-phone text-accent"></i>
+
+          <span class="fw-bold">+1 (800) 555-STEEL</span>
+
+        </div>
+
+        <a href="contact.html#project-quote" class="btn btn-primary-custom w-100">Request Technical Quote</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ==========================================================================
+
+       HOME 1 HERO SECTION: Full-width Cinematic Industrial Hero
+
+       ========================================================================== -->
+
+  <header class="hero-home-1">
+
+    <div class="container position-relative" style="z-index: 2;">
+
+      <div class="row justify-content-center text-center">
+
+        <div class="col-lg-10 col-xl-9">
+
+          <div class="section-subtitle justify-content-center mx-auto mb-4">
+
+            <i class="fa-solid fa-shield-halved"></i> AISC & ISO 9001:2015 Certified Fabricators
+
+          </div>
+
+          <h1 class="hero-title text-center">PRECISION STEEL FABRICATION & STRUCTURAL WORKS</h1>
+
+          <p class="hero-lead mx-auto text-center">
+
+            Engineering the future of heavy industry with high-capacity structural steel fabrication, pre-engineered buildings, robotic welding, and turnkey on-site erection.
+
+          </p>
+
+          <div class="d-flex justify-content-center flex-wrap gap-3">
+
+            <a href="contact.html#project-quote" class="btn btn-primary-custom">
+
+              <span>Get a Technical Quote</span>
+
+              <i class="fa-solid fa-calculator"></i>
+
+            </a>
+
+            <a href="projects.html" class="btn btn-outline-light-custom">
+
+              <span>Explore Projects</span>
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ==========================================================================
+
+       KEY BUSINESS STATISTICS & ACHIEVEMENTS
+
+       ========================================================================== -->
+
+  <section class="section-padding-sm bg-surface border-bottom">
+
+    <div class="container">
+
+      <div class="row g-4">
+
+        <div class="col-6 col-lg-3">
+
+          <div class="counter-box">
+
+            <div class="counter-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+
+            <div class="counter-number" data-count="35" data-suffix="+">0</div>
+
+            <p class="counter-label">Years of Excellence</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-6 col-lg-3">
+
+          <div class="counter-box">
+
+            <div class="counter-icon"><i class="fa-solid fa-building-circle-check"></i></div>
+
+            <div class="counter-number" data-count="1280" data-suffix="+">0</div>
+
+            <p class="counter-label">Projects Completed</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-6 col-lg-3">
+
+          <div class="counter-box">
+
+            <div class="counter-icon"><i class="fa-solid fa-weight-hanging"></i></div>
+
+            <div class="counter-number" data-count="95000" data-suffix=" MT">0</div>
+
+            <p class="counter-label">Steel Fabricated & Erected</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-6 col-lg-3">
+
+          <div class="counter-box">
+
+            <div class="counter-icon"><i class="fa-solid fa-medal"></i></div>
+
+            <div class="counter-number" data-count="100" data-suffix="%">0</div>
+
+            <p class="counter-label">OSHA Safety Compliance</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================================================
+
+       COMPANY INTRODUCTION SECTION
+
+       ========================================================================== -->
+
+  <section class="section-padding bg-alt">
+
+    <div class="container">
+
+      <div class="row align-items-stretch g-5">
+
+        <div class="col-lg-6 d-flex flex-column">
+
+          <div class="equal-height-img-wrap shadow-lg">
+
+            <img src="assets/images/about-intro.jpg" alt="Steel Fabrication Workshop and Engineering Team">
+
+            <div class="tech-spec-badge d-none d-sm-block" style="bottom: 24px; left: 24px; z-index: 3;">
+
+              <div class="number">AISC</div>
+
+              <div class="label">Certified Building Fabricator</div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 d-flex flex-column justify-content-between">
+
+          <div>
+
+            <div class="section-subtitle">
+
+              <i class="fa-solid fa-gear"></i> Built for Heavy Industry
+
+            </div>
+
+            <h2 class="section-title">ENGINEERING STRUCTURAL EXCELLENCE FOR OVER THREE DECADES</h2>
+
+            <p>
+
+              SteelCraft is a premier structural steel fabrication and erection contractor. Operating from a modernized 180,000 sq. ft. fabrication facility, we specialize in high-complexity structural steel frameworks, pre-engineered metal buildings, heavy plate girders, and turnkey industrial installations.
+
+            </p>
+
+            <p>
+
+              Combining 3D BIM detailing in Tekla Structures with advanced CNC automated beam lines, submerged arc welding, and certified NDT quality control, we ensure every joint, weld, and bolt conforms to stringent international building codes.
+
+            </p>
+
+            
+
+            <div class="row g-3 my-3">
+
+              <div class="col-sm-6">
+
+                <div class="d-flex align-items-center gap-2">
+
+                  <i class="fa-solid fa-check text-accent fw-bold"></i>
+
+                  <span class="fw-semibold">AWS Certified Welding Inspectors</span>
+
+                </div>
+
+              </div>
+
+              <div class="col-sm-6">
+
+                <div class="d-flex align-items-center gap-2">
+
+                  <i class="fa-solid fa-check text-accent fw-bold"></i>
+
+                  <span class="fw-semibold">Automated Shot-Blasting & Painting</span>
+
+                </div>
+
+              </div>
+
+              <div class="col-sm-6">
+
+                <div class="d-flex align-items-center gap-2">
+
+                  <i class="fa-solid fa-check text-accent fw-bold"></i>
+
+                  <span class="fw-semibold">Tekla 3D Detailing & BIM Level 2</span>
+
+                </div>
+
+              </div>
+
+              <div class="col-sm-6">
+
+                <div class="d-flex align-items-center gap-2">
+
+                  <i class="fa-solid fa-check text-accent fw-bold"></i>
+
+                  <span class="fw-semibold">Turnkey Structural Site Erection</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="d-flex align-items-center gap-4 pt-3 mt-3 border-top border-secondary border-opacity-10">
+
+            <a href="about.html" class="btn btn-navy">Company Profile & Milestones</a>
+
+            <div class="d-flex align-items-center gap-3">
+
+              <img src="assets/images/team-1.jpg" alt="CEO Signature" class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
+
+              <div>
+
+                <h6 class="mb-0 fw-bold">Marcus Vance</h6>
+
+                <small class="text-muted">Chief Executive & PE</small>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================================================
+
+       MANUFACTURING CAPABILITIES & PLANT EQUIPMENT
+
+       ========================================================================== -->
+
+  <section class="section-padding bg-dark-industrial">
+
+    <div class="container">
+
+      <div class="row align-items-stretch g-5">
+
+        <div class="col-lg-6 d-flex flex-column justify-content-between">
+
+          <div>
+
+            <div class="section-subtitle text-accent">
+
+              <i class="fa-solid fa-microchip"></i> High-Tech Facility
+
+            </div>
+
+            <h2 class="section-title text-white">WORLD-CLASS PLANT EQUIPMENT & CAPACITY</h2>
+
+            <p class="text-secondary-light">
+
+              Our state-of-the-art Houston manufacturing facility utilizes modern European and American automated CNC equipment to maximize output, reduce fabrication cycle times, and achieve microscopic tolerances.
+
+            </p>
+
+
+
+            <div class="row g-4 mt-2">
+
+              <div class="col-sm-6">
+
+                <div class="dark-panel-card p-3 h-100">
+
+                  <h5 class="text-accent mb-1"><i class="fa-solid fa-crosshairs me-2"></i>CNC Beam Line</h5>
+
+                  <p class="text-secondary-light small mb-0">High-speed 3-spindle drilling, coping, and automated robotic plasma marking.</p>
+
+                </div>
+
+              </div>
+
+              <div class="col-sm-6">
+
+                <div class="dark-panel-card p-3 h-100">
+
+                  <h5 class="text-accent mb-1"><i class="fa-solid fa-arrows-split-up-and-left me-2"></i>1000T Brake Press</h5>
+
+                  <p class="text-secondary-light small mb-0">Extreme-tonnage hydraulic bending for structural cones, transition sections, and thick plates.</p>
+
+                </div>
+
+              </div>
+
+              <div class="col-sm-6">
+
+                <div class="dark-panel-card p-3 h-100">
+
+                  <h5 class="text-accent mb-1"><i class="fa-solid fa-spray-can me-2"></i>Automated Blasting</h5>
+
+                  <p class="text-secondary-light small mb-0">Continuous centrifugal shot blaster providing SA 2.5 surface profile with epoxy paint bays.</p>
+
+                </div>
+
+              </div>
+
+              <div class="col-sm-6">
+
+                <div class="dark-panel-card p-3 h-100">
+
+                  <h5 class="text-accent mb-1"><i class="fa-solid fa-shield-virus me-2"></i>Certified NDT Lab</h5>
+
+                  <p class="text-secondary-light small mb-0">In-house Radiographic (RT), Ultrasonic (UT), and Magnetic Particle (MPI) testing.</p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col-lg-6 d-flex flex-column">
+
+          <div class="equal-height-img-wrap border border-secondary border-opacity-25 shadow-lg">
+
+            <img src="assets/images/gallery-4.jpg" alt="Automated Heavy Plate Brake Press and Fabrication Shop Floor">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================================================
+
+       INDUSTRIES WE SERVE
+
+       ========================================================================== -->
+
+  <section class="section-padding bg-alt">
+
+    <div class="container">
+
+      <div class="text-center max-w-700 mx-auto mb-5">
+
+        <div class="section-subtitle">
+
+          <i class="fa-solid fa-network-wired"></i> Sector Solutions
+
+        </div>
+
+        <h2 class="section-title">INDUSTRIES POWERED BY OUR STEEL</h2>
+
+        <p class="text-muted">
+
+          Delivering specialized structural steel conforming to sector-specific certifications, seismic parameters, and heavy load criteria.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6">
+
+          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
+
+            <i class="fa-solid fa-oil-well fa-3x text-accent mb-3"></i>
+
+            <h4 class="h5">Oil, Gas & Petrochemical</h4>
+
+            <p class="small text-muted mb-0">Modular process skids, pipe racks, furnace structural frames, and flare towers.</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
+
+            <i class="fa-solid fa-warehouse fa-3x text-accent mb-3"></i>
+
+            <h4 class="h5">Warehousing & Logistics</h4>
+
+            <p class="small text-muted mb-0">Wide clear-span PEB distribution warehouses, mezzanine platforms, and crane buildings.</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
+
+            <i class="fa-solid fa-bridge fa-3x text-accent mb-3"></i>
+
+            <h4 class="h5">Infrastructure & Bridges</h4>
+
+            <p class="small text-muted mb-0">Highway overpasses, pedestrian bridges, rail trusses, and heavy sign gantries.</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
+
+            <i class="fa-solid fa-building fa-3x text-accent mb-3"></i>
+
+            <h4 class="h5">Commercial Real Estate</h4>
+
+            <p class="small text-muted mb-0">High-rise core columns, transfer girders, architectural steel canopies, and stairs.</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
+
+            <i class="fa-solid fa-mountain fa-3x text-accent mb-3"></i>
+
+            <h4 class="h5">Mining & Heavy Manufacturing</h4>
+
+            <p class="small text-muted mb-0">Heavy conveyor galleries, crusher support structures, and industrial silos.</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+          <div class="p-4 bg-surface rounded border border-light-subtle h-100 shadow-sm text-center">
+
+            <i class="fa-solid fa-ship fa-3x text-accent mb-3"></i>
+
+            <h4 class="h5">Marine & Offshore</h4>
+
+            <p class="small text-muted mb-0">Docks, shipyard cranes, barge load-out structures, and marine bulkhead pilings.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================================================
+
+       CLIENT TESTIMONIALS
+
+       ========================================================================== -->
+
+  <section class="section-padding bg-surface">
+
+    <div class="container">
+
+      <div class="text-center max-w-700 mx-auto mb-5">
+
+        <div class="section-subtitle">
+
+          <i class="fa-solid fa-comments"></i> Verified Feedback
+
+        </div>
+
+        <h2 class="section-title">WHAT GENERAL CONTRACTORS SAY</h2>
+
+        <p class="text-muted">Hear from the EPC leaders and construction project directors who rely on SteelCraft.</p>
+
+      </div>
+
+
+
+      <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="testimonial-card">
+
+            <div class="testimonial-stars">
+
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <p class="testimonial-text">
+
+              "SteelCraft delivered 4,500 tons of structural steel for our automotive assembly plant 3 weeks ahead of schedule. Their Tekla 3D detailing was flawless—not a single field clash occurred during erection."
+
+            </p>
+
+            <div class="testimonial-author">
+
+              <img src="assets/images/avatar-1.jpg" alt="Robert Sterling" class="testimonial-avatar">
+
+              <div>
+
+                <h5 class="testimonial-name">Robert Sterling</h5>
+
+                <p class="testimonial-role">Senior VP of Construction, Apex Infra</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="testimonial-card">
+
+            <div class="testimonial-stars">
+
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <p class="testimonial-text">
+
+              "The quality of full-penetration welding and paint coating on the Gulf Coast marine skids passed every third-party ultrasonic inspection with zero defects. A truly professional team."
+
+            </p>
+
+            <div class="testimonial-author">
+
+              <img src="assets/images/avatar-2.jpg" alt="Sarah Lin" class="testimonial-avatar">
+
+              <div>
+
+                <h5 class="testimonial-name">Sarah Lin, PE</h5>
+
+                <p class="testimonial-role">Project Director, Energo Global</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="testimonial-card">
+
+            <div class="testimonial-stars">
+
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <p class="testimonial-text">
+
+              "Their erection crew executed a 75-meter clear-span PEB warehouse with exceptional safety standards. Highly recommend SteelCraft for any complex structural assignment."
+
+            </p>
+
+            <div class="testimonial-author">
+
+              <img src="assets/images/avatar-3.jpg" alt="Carlos Rodriguez" class="testimonial-avatar">
+
+              <div>
+
+                <h5 class="testimonial-name">Carlos Rodriguez</h5>
+
+                <p class="testimonial-role">Chief Engineer, Vanguard Logistics</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Trusted Client & Partner Logos -->
+
+      <div class="partner-showcase-wrap mt-5 pt-4 border-top border-secondary border-opacity-10">
+
+        <div class="text-center mb-4">
+
+          <span class="partner-section-label">
+
+            <i class="fa-solid fa-handshake text-accent me-2"></i>TRUSTED BY NORTH AMERICA'S LEADING EPC CONTRACTORS &amp; INFRASTRUCTURE BUILDERS
+
+          </span>
+
+        </div>
+
+
+
+        <div class="row g-3 g-lg-4 justify-content-center">
+
+          <!-- Partner 1: TITAN -->
+
+          <div class="col-6 col-sm-4 col-lg-2">
+
+            <div class="partner-brand-card">
+
+              <div class="brand-emblem">
+
+                <i class="fa-solid fa-cubes-stacked"></i>
+
+              </div>
+
+              <div class="brand-meta">
+
+                <span class="brand-title">TITAN</span>
+
+                <span class="brand-subtitle">INFRASTRUCTURE</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Partner 2: APEX -->
+
+          <div class="col-6 col-sm-4 col-lg-2">
+
+            <div class="partner-brand-card">
+
+              <div class="brand-emblem">
+
+                <i class="fa-solid fa-shapes"></i>
+
+              </div>
+
+              <div class="brand-meta">
+
+                <span class="brand-title">APEX</span>
+
+                <span class="brand-subtitle">STRUCTURAL PEB</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Partner 3: VORTEX -->
+
+          <div class="col-6 col-sm-4 col-lg-2">
+
+            <div class="partner-brand-card">
+
+              <div class="brand-emblem">
+
+                <i class="fa-solid fa-compass-drafting"></i>
+
+              </div>
+
+              <div class="brand-meta">
+
+                <span class="brand-title">VORTEX</span>
+
+                <span class="brand-subtitle">INDUSTRIAL EPC</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Partner 4: METALLIX -->
+
+          <div class="col-6 col-sm-4 col-lg-2">
+
+            <div class="partner-brand-card">
+
+              <div class="brand-emblem">
+
+                <i class="fa-solid fa-atom"></i>
+
+              </div>
+
+              <div class="brand-meta">
+
+                <span class="brand-title">METALLIX</span>
+
+                <span class="brand-subtitle">STEELWORKS</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Partner 5: AUSTEN -->
+
+          <div class="col-6 col-sm-4 col-lg-2">
+
+            <div class="partner-brand-card">
+
+              <div class="brand-emblem">
+
+                <i class="fa-solid fa-building-shield"></i>
+
+              </div>
+
+              <div class="brand-meta">
+
+                <span class="brand-title">AUSTEN</span>
+
+                <span class="brand-subtitle">OFFSHORE MARINE</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Partner 6: KINETIC -->
+
+          <div class="col-6 col-sm-4 col-lg-2">
+
+            <div class="partner-brand-card">
+
+              <div class="brand-emblem">
+
+                <i class="fa-solid fa-bolt-lightning"></i>
+
+              </div>
+
+              <div class="brand-meta">
+
+                <span class="brand-title">KINETIC</span>
+
+                <span class="brand-subtitle">ENERGY &amp; CIVIL</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================================================
+
+       LATEST INDUSTRY BLOG ARTICLES
+
+       ========================================================================== -->
+
+  <section class="section-padding bg-alt">
+
+    <div class="container">
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+
+        <div>
+
+          <div class="section-subtitle">
+
+            <i class="fa-solid fa-newspaper"></i> Technical Insights
+
+          </div>
+
+          <h2 class="section-title mb-0">LATEST STRUCTURAL ENGINEERING ARTICLES</h2>
+
+        </div>
+
+        <div class="mt-3 mt-md-0">
+
+          <a href="blog.html" class="btn btn-outline-custom">View All Technical Publications <i class="fa-solid fa-arrow-right ms-2"></i></a>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="row g-4">
+
+        <!-- Blog 1 -->
+
+        <div class="col-md-6 col-lg-4">
+
+          <div class="blog-card">
+
+            <div class="blog-card-img-wrap">
+
+              <img src="assets/images/blog-1.jpg" alt="High Strength Steel Grades">
+
+              <span class="blog-card-date">Nov 12, 2026</span>
+
+            </div>
+
+            <div class="blog-card-body">
+
+              <div class="blog-card-meta">
+
+                <span><i class="fa-solid fa-user"></i> Marcus Vance</span>
+
+                <span><i class="fa-solid fa-tag"></i> Material Science</span>
+
+              </div>
+
+              <h3 class="blog-card-title"><a href="blog-details.html">Advances in ASTM A992 & S355 High-Strength Structural Steel</a></h3>
+
+              <p class="blog-card-desc">
+
+                Analyzing yield strength behaviors, seismic ductility factors, and weight savings in multi-tier high-rise frames.
+
+              </p>
+
+              <a href="blog-details.html" class="fw-bold text-accent">Read Full Article <i class="fa-solid fa-arrow-right ms-1"></i></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Blog 2 -->
+
+        <div class="col-md-6 col-lg-4">
+
+          <div class="blog-card">
+
+            <div class="blog-card-img-wrap">
+
+              <img src="assets/images/blog-2.jpg" alt="BIM and Tekla Modeling">
+
+              <span class="blog-card-date">Oct 28, 2026</span>
+
+            </div>
+
+            <div class="blog-card-body">
+
+              <div class="blog-card-meta">
+
+                <span><i class="fa-solid fa-user"></i> Elena Rostova</span>
+
+                <span><i class="fa-solid fa-tag"></i> BIM & Detailing</span>
+
+              </div>
+
+              <h3 class="blog-card-title"><a href="blog-details.html">Why Tekla 3D Detailing Eliminates 98% of Jobsite Erection Clashes</a></h3>
+
+              <p class="blog-card-desc">
+
+                A technical comparison between traditional 2D drafting and cloud-synchronized 3D BIM connection engineering.
+
+              </p>
+
+              <a href="blog-details.html" class="fw-bold text-accent">Read Full Article <i class="fa-solid fa-arrow-right ms-1"></i></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Blog 3 -->
+
+        <div class="col-md-6 col-lg-4">
+
+          <div class="blog-card">
+
+            <div class="blog-card-img-wrap">
+
+              <img src="assets/images/blog-3.jpg" alt="Submerged Arc Welding Quality">
+
+              <span class="blog-card-date">Oct 14, 2026</span>
+
+            </div>
+
+            <div class="blog-card-body">
+
+              <div class="blog-card-meta">
+
+                <span><i class="fa-solid fa-user"></i> David Chen, CWI</span>
+
+                <span><i class="fa-solid fa-tag"></i> Quality & NDT</span>
+
+              </div>
+
+              <h3 class="blog-card-title"><a href="blog-details.html">Essential Quality Protocols for Submerged Arc Welding of Heavy Girders</a></h3>
+
+              <p class="blog-card-desc">
+
+                Understanding flux selection, heat input boundaries, and ultrasonic non-destructive testing requirements under AWS D1.1.
+
+              </p>
+
+              <a href="blog-details.html" class="fw-bold text-accent">Read Full Article <i class="fa-solid fa-arrow-right ms-1"></i></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================================================
+
+       CALL TO ACTION BANNER
+
+       ========================================================================== -->
+
+  <section class="section-padding bg-accent text-white">
+
+    <div class="container">
+
+      <div class="row align-items-center g-4">
+
+        <div class="col-lg-8">
+
+          <h2 class="text-white display-6 fw-bold mb-2">READY TO COMMENCE YOUR NEXT STRUCTURAL BUILD?</h2>
+
+          <p class="mb-0 text-white text-opacity-90 lead">
+
+            Send us your CAD drawings or architectural tender specs for a prompt, transparent, and comprehensive quotation.
+
+          </p>
+
+        </div>
+
+        <div class="col-lg-4 text-lg-end">
+
+          <a href="contact.html#project-quote" class="btn btn-navy btn-lg shadow">
+
+            <span>Submit RFQ & Drawings</span>
+
+            <i class="fa-solid fa-file-arrow-up ms-2"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================================================
+
+       FOOTER
+
+       ========================================================================== -->
+
+  <footer class="footer-main">
+
+    <div class="container">
+
+      <div class="row g-4">
+
+        <!-- Col 1: Brand & About (col-lg-4 col-md-6) -->
+
+        <div class="col-lg-3 col-md-6 col-brand-wrap">
+
+          <div class="footer-brand-wrap">
+
+            <div class="brand-logo">
+
+              <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
+
+              <div class="text-white">STEEL<span class="accent">CRAFT</span></div>
+
+            </div>
+
+          </div>
+
+          <p class="text-secondary-light">
+
+            AISC and ISO 9001:2015 certified steel fabrication and structural engineering contractor specializing in pre-engineered buildings and heavy industrial structures.
+
+          </p>
+
+          <div class="d-flex gap-2 mt-3">
+
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Col 2: Core Services Links (col-lg-2 col-md-3 col-6) -->
+
+        <div class="col-lg-3 col-md-6 col-6">
+
+          <h4 class="footer-widget-title">Core Services</h4>
+
+          <ul class="footer-links">
+
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Structural Steel</a></li>
+
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Industrial Sheds</a></li>
+
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Steel Buildings</a></li>
+
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Welding Services</a></li>
+
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> CNC Cutting</a></li>
+
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> All Services</a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <!-- Col 3: Quick Navigation (col-lg-2 col-md-3 col-6) -->
+
+        <div class="col-lg-3 col-md-6 col-6">
+
+          <h4 class="footer-widget-title">Company</h4>
+
+          <ul class="footer-links">
+
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+
+            <li><a href="projects.html"><i class="fa-solid fa-angle-right"></i> Project Portfolio</a></li>
+
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Visual Gallery</a></li>
+
+            <li><a href="pricing.html"><i class="fa-solid fa-angle-right"></i> Pricing Packages</a></li>
+
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Technical Blog</a></li>
+
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <!-- Col 4: Contact & Newsletter (col-lg-4 col-md-6) -->
+
+        <div class="col-lg-3 col-md-6">
+
+          <h4 class="footer-widget-title">Houston HQ</h4>
+
+          <div class="footer-contact-item">
+
+            <i class="fa-solid fa-map-location-dot"></i>
+
+            <div>
+
+              <strong class="text-white">Facility Address:</strong><br>
+
+              4528 Heavy Industry Pkwy, Houston, TX
+
+            </div>
+
+          </div>
+
+          <div class="footer-contact-item">
+
+            <i class="fa-solid fa-phone-volume"></i>
+
+            <div>
+
+              <strong class="text-white">Phone Support:</strong><br>
+
+              <a href="tel:+18005553733">+1 (800) 555-STEEL</a>
+
+            </div>
+
+          </div>
+
+          <div class="footer-contact-item">
+
+            <i class="fa-solid fa-envelope-open-text"></i>
+
+            <div>
+
+              <strong class="text-white">Technical Estimations:</strong><br>
+
+              <a href="mailto:quotes@steelcraft-works.com">quotes@steelcraft-works.com</a>
+
+            </div>
+
+          </div>
+
+
+
+          <form class="newsletter-form mt-2">
+
+            <div class="input-group">
+
+              <input type="email" class="form-control" placeholder="Corporate email..." required>
+
+              <button class="btn btn-primary-custom" type="submit">Join</button>
+
+            </div>
+
+            <div class="newsletter-feedback mt-1"></div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container text-center text-secondary-light small">
+
+        &copy; 2026 SteelCraft Industrial Works LLC. All rights reserved. AISC &amp; ISO 9001:2015 Certified Facility.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- JS Dependencies -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/portfolio-gallery.js"></script>
+
+  <script src="assets/js/forms.js"></script>
+
+</body>
+
+</html>
+
