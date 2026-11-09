@@ -2018,7 +2018,7 @@ ul {
 
   align-items: center;
 
-  background: linear-gradient(rgba(11, 25, 41, 0.82), rgba(11, 25, 41, 0.88)),
+  background: linear-gradient(rgba(11, 25, 41, 0.68), rgba(11, 25, 41, 0.78)),
 
               url('../images/hero-bg-1.jpg') center center / cover no-repeat;
 
@@ -2113,89 +2113,71 @@ ul {
 
 
 /* HOME 2: Split-Layout Technical Structural Engineering Hero */
-
 .hero-home-2 {
   position: relative;
-  background: linear-gradient(rgba(11, 25, 41, 0.88), rgba(11, 25, 41, 0.94)),
-              url('../images/project-6.jpg') center center / cover no-repeat;
-
+  background: linear-gradient(90deg, rgba(11, 25, 41, 0.78) 0%, rgba(11, 25, 41, 0.60) 55%, rgba(11, 25, 41, 0.38) 100%),
+              url('../images/hero-home-2-bg.jpg') center center / cover no-repeat;
   padding: 90px 0 80px;
-
   border-bottom: 1px solid var(--border-color);
-
   overflow: hidden;
-
+  color: #FFFFFF;
 }
-
-
 
 .hero-home-2::after {
-
   content: '';
-
   position: absolute;
-
   inset: 0;
-
   background-image: 
-
-    linear-gradient(to right, var(--border-color) 1px, transparent 1px),
-
-    linear-gradient(to bottom, var(--border-color) 1px, transparent 1px);
-
+    linear-gradient(to right, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
   background-size: 60px 60px;
-
-  opacity: 0.35;
-
+  opacity: 1;
   pointer-events: none;
-
 }
-
-
 
 .hero-home-2 .hero-badge {
-
   display: inline-flex;
-
   align-items: center;
-
   gap: 8px;
-
-  background: var(--bg-surface);
-
-  border: 1px solid var(--border-color);
-
+  background: rgba(11, 25, 41, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 6px 14px;
-
   border-radius: 50px;
-
   font-family: var(--font-heading);
-
   font-size: 0.85rem;
-
   font-weight: 700;
-
-  color: var(--text-main);
-
+  color: #FFFFFF;
   margin-bottom: 20px;
-
 }
-
-
 
 .hero-home-2 .hero-title {
-
   font-size: 3.25rem;
-
   font-weight: 800;
-
   line-height: 1.15;
-
   margin-bottom: 1.25rem;
-
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+.hero-home-2 .lead {
+  color: #E2E8F0 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
 
+.hero-home-2 .btn-outline-custom {
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
+  background: rgba(11, 25, 41, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.hero-home-2 .btn-outline-custom:hover {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #FFFFFF !important;
+}
 
 .hero-image-stack {
 
@@ -4245,7 +4227,7 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(11, 25, 41, 0.88) 0%, rgba(11, 25, 41, 0.82) 50%, rgba(6, 14, 24, 0.92) 100%);
+  background: linear-gradient(135deg, rgba(11, 25, 41, 0.75) 0%, rgba(11, 25, 41, 0.60) 50%, rgba(6, 14, 24, 0.78) 100%);
   z-index: 1;
 }
 
