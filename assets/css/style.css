@@ -5726,3 +5726,48 @@ ul {
   border-color: var(--accent) !important;
   color: #FFFFFF !important;
 }
+
+
+/* ==========================================================================
+   ACCORDION & FAQ ENHANCEMENTS
+   ========================================================================== */
+.accordion-item {
+  border-radius: var(--radius-sm) !important;
+  overflow: hidden;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all var(--transition-fast);
+}
+
+.accordion-item:hover {
+  border-color: rgba(249, 115, 22, 0.4) !important;
+}
+
+.accordion-button {
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 600;
+  padding: 16px 22px;
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  box-shadow: none !important;
+  transition: all var(--transition-fast);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--bg-alt);
+  color: var(--accent);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--accent);
+}
+
+.accordion-body {
+  padding: 18px 22px;
+  line-height: 1.65;
+  font-size: 0.93rem;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-color);
+}
