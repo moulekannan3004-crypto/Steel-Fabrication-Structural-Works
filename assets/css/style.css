@@ -4404,95 +4404,60 @@ ul {
 
 
 .footer-widget-title {
-
   font-family: var(--font-heading);
-
   font-size: 1.05rem;
-
   font-weight: 700;
-
   text-transform: uppercase;
-
   letter-spacing: 0.8px;
-
   color: #FFFFFF;
-
   margin-top: 0;
-
   margin-bottom: 20px;
-
   position: relative;
-
-  padding-bottom: 10px;
-
   height: 42px;
-
   min-height: 42px;
-
   display: flex;
-
   align-items: center;
-
 }
-
-
 
 .footer-widget-title::after {
-
   content: '';
-
   position: absolute;
-
   bottom: 0;
-
   left: 0;
-
   width: 32px;
-
   height: 2px;
-
   background-color: var(--accent);
-
 }
 
-
+[dir="rtl"] .footer-widget-title::after {
+  left: auto;
+  right: 0;
+}
 
 .footer-brand-wrap {
-
   height: 42px;
-
   min-height: 42px;
-
   display: flex;
-
   align-items: center;
-
   margin-bottom: 20px;
-
 }
-
-
 
 .footer-main .col-brand-wrap {
-
   display: flex;
-
   flex-direction: column;
-
-  justify-content: space-between;
-
+  justify-content: flex-start;
 }
 
+.footer-main .col-brand-wrap p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
 
-
+.footer-main .col-brand-wrap .d-flex.gap-2,
 .footer-main .d-flex.gap-2.mt-4,
-
 .footer-main .d-flex.gap-2.mt-3 {
-
-  margin-top: auto !important;
-
-  padding-top: 16px;
-
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 
