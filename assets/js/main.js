@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('steelcraft_dir', dir);
 
     rtlToggleBtns.forEach(btn => {
-      btn.innerHTML = '<span>LTR - RTL</span>';
+      btn.innerHTML = '<span>LTR</span> <i class="fa-solid fa-right-left"></i> <span>RTL</span>';
       if (dir === 'rtl') {
         btn.classList.add('active');
         btn.setAttribute('title', 'Direction: RTL (Click to switch to LTR)');

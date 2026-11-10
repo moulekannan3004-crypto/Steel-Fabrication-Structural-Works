@@ -31,7 +31,7 @@
 
       <div class="header-actions order-xl-3">
         <button class="theme-toggle-btn" title="Toggle Light/Dark Theme"><i class="fa-solid fa-moon"></i></button>
-        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction"><span>LTR - RTL</span></button>
+        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction" aria-label="Switch Direction"><span>LTR</span> <i class="fa-solid fa-right-left"></i> <span>RTL</span></button>
         <a href="#project-quote" class="btn btn-primary-custom d-none d-sm-inline-flex ms-2">
           <span>Get a Quote</span>
           <i class="fa-solid fa-arrow-right"></i>
@@ -66,10 +66,10 @@
   <!-- Mobile Offcanvas -->
   <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu">
     <div class="offcanvas-header border-bottom">
-      <div class="brand-logo">
+      <a class="brand-logo" href="index.html" aria-label="SteelCraft Home">
         <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
         <div>STEEL<span class="accent">CRAFT</span></div>
-      </div>
+      </a>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body">
@@ -320,6 +320,115 @@
     </div>
   </section>
 
+  <!-- ==========================================================================
+       SECTION: FREQUENTLY ASKED QUESTIONS (CONTACT & ESTIMATING FAQ)
+       ========================================================================== -->
+  <section class="section-padding bg-surface border-top" id="contact-faq">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="section-subtitle">
+          <i class="fa-solid fa-circle-question"></i> Common Inquiries
+        </div>
+        <h2 class="section-title">FREQUENTLY ASKED ESTIMATING & BIDDING QUESTIONS</h2>
+        <p class="text-muted">
+          Got questions before submitting your RFQ or scheduling a meeting? Find clear answers regarding our bidding SLA, drawing submittals, NDA protection, project minimums, and Houston facility walkthroughs.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <div class="accordion" id="contactFaq">
+
+            <!-- Question 1 -->
+            <div class="accordion-item bg-surface border mb-3">
+              <h2 class="accordion-header" id="cfaq1">
+                <button class="accordion-button fw-bold text-main" type="button" data-bs-toggle="collapse" data-bs-target="#ccollapse1" aria-expanded="true" aria-controls="ccollapse1">
+                  What is your typical turnaround time for quotation and estimating proposals?
+                </button>
+              </h2>
+              <div id="ccollapse1" class="accordion-collapse collapse show" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted small">
+                  Our estimating desk maintains a strict 24 to 48-hour SLA for standard structural take-offs and pre-engineered packages. For multi-tier commercial high-rises or industrial facilities requiring complex connection engineering, phased erection schedules, and value engineering analysis, formal comprehensive proposals are delivered within 3 to 5 business days.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item bg-surface border mb-3">
+              <h2 class="accordion-header" id="cfaq2">
+                <button class="accordion-button collapsed fw-bold text-main" type="button" data-bs-toggle="collapse" data-bs-target="#ccollapse2" aria-expanded="false" aria-controls="ccollapse2">
+                  What CAD and BIM file formats do you accept for detailed take-offs?
+                </button>
+              </h2>
+              <div id="cfaq2" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted small">
+                  Our in-house detailing team uses Tekla Structures, SDS2, and Revit. We accept 2D structural blueprints (PDF, DWG, DXF), 3D BIM models (IFC, CIS/2, RVT), and direct CNC manufacturing data (DSTV, NC1). Files up to 25MB can be uploaded directly via our RFQ form. For larger sets, our estimating team will supply a secure, high-speed upload portal.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item bg-surface border mb-3">
+              <h2 class="accordion-header" id="cfaq3">
+                <button class="accordion-button collapsed fw-bold text-main" type="button" data-bs-toggle="collapse" data-bs-target="#ccollapse3" aria-expanded="false" aria-controls="ccollapse3">
+                  Can SteelCraft execute a mutual Non-Disclosure Agreement (NDA) before drawing sharing?
+                </button>
+              </h2>
+              <div id="cfaq3" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted small">
+                  Yes, absolutely. Proprietary intellectual property, architectural designs, and EPC bid specifications are treated with the highest commercial confidentiality. We routinely sign and execute bilateral mutual NDAs within 24 hours prior to receiving confidential drawings or proprietary process plant layouts.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item bg-surface border mb-3">
+              <h2 class="accordion-header" id="cfaq4">
+                <button class="accordion-button collapsed fw-bold text-main" type="button" data-bs-toggle="collapse" data-bs-target="#ccollapse4" aria-expanded="false" aria-controls="ccollapse4">
+                  What is the minimum project size or structural steel tonnage you handle?
+                </button>
+              </h2>
+              <div id="cfaq4" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted small">
+                  While our primary Houston fabrication plant is optimized for multi-thousand-ton heavy industrial contracts, our dedicated specialty fabrication bay handles smaller engineered structural packages starting from 10 to 50 metric tons, including industrial equipment skids, mezzanines, pipe racks, and architectural canopy frameworks.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item bg-surface border mb-3">
+              <h2 class="accordion-header" id="cfaq5">
+                <button class="accordion-button collapsed fw-bold text-main" type="button" data-bs-toggle="collapse" data-bs-target="#ccollapse5" aria-expanded="false" aria-controls="ccollapse5">
+                  Can we tour your Houston plant or conduct a pre-award quality audit?
+                </button>
+              </h2>
+              <div id="cfaq5" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted small">
+                  We warmly encourage general contractors, EPC project directors, and structural engineers of record to visit our 185,000 sq. ft. facility at 4528 Heavy Industry Parkway. Guided walkthroughs allow your QA team to inspect our automated CNC drill lines, robotic welding bays, blast/paint booths, and ISO 9001:2015 quality records. Reach out to our plant office to schedule an escorted tour.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="accordion-item bg-surface border mb-3">
+              <h2 class="accordion-header" id="cfaq6">
+                <button class="accordion-button collapsed fw-bold text-main" type="button" data-bs-toggle="collapse" data-bs-target="#ccollapse6" aria-expanded="false" aria-controls="ccollapse6">
+                  Do your bids cover supply-only (FOB) or full turnkey erection services?
+                </button>
+              </h2>
+              <div id="cfaq6" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted small">
+                  We provide quotes tailored precisely to your contracting structure. You can request FOB shop fabrication only (with color-coded phased shipping), delivered-to-jobsite logistics coordination, or complete turnkey design-assist, detailing, fabrication, and certified field erection overseen by OSHA 30-certified erection superintendents.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Google Maps Interactive Integration -->
   <section class="p-0 border-top border-bottom">
     <div class="ratio ratio-21x9" style="min-height: 400px;">
@@ -341,10 +450,10 @@
         <!-- Col 1: Brand & About (col-lg-4 col-md-6) -->
         <div class="col-lg-3 col-md-6 col-brand-wrap">
           <div class="footer-brand-wrap">
-            <div class="brand-logo">
+            <a class="brand-logo" href="index.html" aria-label="SteelCraft Home">
               <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
               <div class="text-white">STEEL<span class="accent">CRAFT</span></div>
-            </div>
+            </a>
           </div>
           <p class="text-secondary-light">
             AISC and ISO 9001:2015 certified steel fabrication and structural engineering contractor specializing in pre-engineered buildings and heavy industrial structures.
