@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Tekla 3D Detailing Eliminates 98% of Jobsite Erection Clashes - SteelCraft Engineering Articles</title>
+  <meta name="description" content="Discover how Tekla 3D BIM connection modeling and automated DSTV machine data eliminate 98% of structural steel erection clashes.">
+
+    <!-- Favicon / Brand Logo Tab Icon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon-apple.png">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Main Navigation -->
+  <nav class="navbar navbar-expand-xl navbar-custom">
+    <div class="container-fluid px-3 px-xl-5">
+      <a class="brand-logo" href="index.html">
+        <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
+        <div>STEEL<span class="accent">CRAFT</span></div>
+      </a>
+
+      <div class="header-actions order-xl-3">
+        <button class="theme-toggle-btn" title="Toggle Light/Dark Theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction" aria-label="Switch Direction"><span>RTL</span></button>
+        <a href="contact.html#project-quote" class="btn btn-primary-custom d-none d-sm-inline-flex ms-2">
+          <span>Get a Quote</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <i class="fa-solid fa-bars fa-lg text-main"></i>
+        </button>
+      </div>
+
+      <!-- Desktop Nav Items -->
+      <div class="collapse navbar-collapse order-xl-2 justify-content-center" id="desktopNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Home <i class="fa-solid fa-angle-down ms-1 dropdown-caret-icon"></i></a>
+          <ul class="dropdown-menu dropdown-menu-custom">
+            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+          </ul>
+        </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header border-bottom">
+      <a class="brand-logo" href="index.html" aria-label="SteelCraft Home">
+        <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
+        <div>STEEL<span class="accent">CRAFT</span></div>
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+            <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Home <i class="fa-solid fa-angle-down ms-1 dropdown-caret-icon"></i></a>
+          <ul class="dropdown-menu dropdown-menu-custom">
+            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Page Banner -->
+  <div class="page-banner banner-blog-details">
+    <div class="container position-relative">
+      <h1 class="page-banner-title">TECHNICAL ARTICLE</h1>
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right text-muted small"></i>
+        <a href="blog.html">Blog</a>
+        <i class="fa-solid fa-chevron-right text-muted small"></i>
+        <span class="active">Article Details</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Details Content -->
+  <section class="section-padding bg-surface">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Main Article Column -->
+        <div class="col-lg-8">
+          <article>
+            <div class="mb-4">
+              <span class="badge bg-accent text-white px-3 py-2 mb-3">3D BIM & Detailing</span>
+              <h1 class="h2 text-main mb-3">Why Tekla 3D Detailing Eliminates 98% of Jobsite Erection Clashes</h1>
+                            <div class="d-flex flex-wrap align-items-center gap-3 text-muted small pb-3 border-bottom border-light-subtle">
+                <span><i class="fa-solid fa-user text-accent me-1"></i> By <strong>Elena Rostova</strong></span>
+                <span><i class="fa-solid fa-calendar text-accent me-1"></i> Published October 28, 2026</span>
+                <span><i class="fa-solid fa-clock text-accent me-1"></i> 5 Min Read</span>
+                <span><i class="fa-solid fa-comments text-accent me-1"></i> 2 Comments</span>
+              </div>
+            </div>
+
+            <!-- Featured Image -->
+            <img src="assets/images/tekla-3d-detailing.jpg" alt="Tekla Structures 3D Structural Steel BIM Detailing and Clash Detection" class="img-fluid rounded mb-4 w-100 shadow-sm" style="max-height: 420px; object-fit: cover;">
+
+            <!-- Table of Contents Card -->
+                        <div class="p-4 bg-alt rounded border border-light-subtle mb-4">
+              <h5 class="h6 text-main mb-3"><i class="fa-solid fa-list-ol text-accent me-2"></i>Table of Contents</h5>
+              <ul class="small mb-0">
+                <li class="mb-1"><a href="#section-paradigm" class="text-main fw-semibold">1. The Paradigm Shift from 2D Drawings to Parametric 3D BIM</a></li>
+                <li class="mb-1"><a href="#section-clash" class="text-main fw-semibold">2. Multi-Disciplinary Clash Detection (MEP & Architecture)</a></li>
+                <li class="mb-1"><a href="#section-dstv" class="text-main fw-semibold">3. Direct DSTV Machine Data Integration with Shop CNCs</a></li>
+                <li class="mb-1"><a href="#section-field" class="text-main fw-semibold">4. Jobsite Erection Speed & Tolerance Verification</a></li>
+                <li class="mb-1"><a href="#section-roi" class="text-main fw-semibold">5. Quantifying the ROI of Advanced 3D Detailing</a></li>
+              </ul>
+            </div>
+
+            <!-- Content Section 1 -->
+            <div id="section-introduction" class="mb-4">
+              <h3 class="h4">1. Introduction to Modern High-Strength Steels</h3>
+              <p>
+                In high-rise and heavy industrial construction, optimizing the strength-to-weight ratio is crucial for seismic performance, foundation economies, and overall superstructure efficiency. While ASTM A36 served as the backbone of North American structural fabrication for decades, the transition to ASTM A992 has fundamentally reshaped wide-flange beam and column specifications.
+              </p>
+              <p>
+                ASTM A992 was originally engineered specifically for wide-flange shapes (W-shapes). Unlike older grades, it establishes both a minimum yield strength (50 ksi / 345 MPa) and a defined maximum yield strength (65 ksi / 450 MPa), preventing unpredictable over-strength in capacity-designed seismic moment frames.
+              </p>
+            </div>
+
+            <!-- Callout Quote Box -->
+            <div class="p-4 bg-dark-industrial text-white rounded border-start border-4 border-warning my-4">
+              <p class="fs-5 fst-italic mb-2">
+                "Controlling the maximum yield strength in ASTM A992 is just as critical as guaranteeing the minimum. It ensures plastic hinges form in predictable beam locations rather than in brittle column joints during seismic loading."
+              </p>
+              <small class="text-secondary-light">— AISC Steel Construction Manual Commentary, Section B4</small>
+            </div>
+
+            <!-- Content Section 2 -->
+            <div id="section-chemical" class="mb-4">
+              <h3 class="h4">2. Chemical Composition & Maximum Yield Limits</h3>
+              <p>
+                The strict chemical limits of ASTM A992 guarantee superior weldability without excessive preheating requirements. The carbon equivalent (CE) is capped at 0.45% (or 0.47% for heavier flanges), calculated according to the formula:
+              </p>
+              <div class="p-3 bg-alt rounded font-monospace small text-center mb-3">
+                CE = C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15 &le; 0.45%
+              </div>
+              <p>
+                Similarly, European standard EN 10025-2 Grade S355JR / J2 enforces tight limits on phosphorus and sulfur (&le; 0.025%) to preserve notch toughness at sub-zero temperatures (Charpy V-notch impact energy &ge; 27 Joules at -20&deg;C).
+              </p>
+            </div>
+
+            <!-- Content Section 3 -->
+            <div id="section-seismic" class="mb-4">
+              <h3 class="h4">3. Seismic Ductility & Yield-to-Tensile (Y/T) Ratios</h3>
+              <p>
+                In seismic design categories D, E, and F, structures rely on energy dissipation through inelastic deformation. For this behavior to occur reliably, the material must possess sufficient strain hardening capacity before fracture.
+              </p>
+              <p>
+                ASTM A992 requires a maximum yield-to-tensile ratio of <strong>0.85</strong>. This ensures that when a member yields at 50 ksi, its tensile capacity reaches at least 65 ksi, allowing plastic redistribution across the connection zone rather than localized necking.
+              </p>
+            </div>
+
+            <!-- Content Section 4 -->
+            <div id="section-fabrication" class="mb-4">
+              <h3 class="h4">4. Fabrication Best Practices & Weld Preheat Parameters</h3>
+              <p>
+                When fabricating heavy built-up members from ASTM A992 or S355:
+              </p>
+              <ul>
+                <li class="mb-2"><strong>Preheat Control:</strong> Thick flanges (&gt;38mm) require minimum preheat temperatures of 65&deg;C (150&deg;F) under AWS D1.1 Table 3.3 to prevent hydrogen-induced heat-affected zone (HAZ) cracking.</li>
+                <li class="mb-2"><strong>Low-Hydrogen Consumables:</strong> All electrode consumables should be classified as H4 (diffusible hydrogen &le; 4 ml/100g of deposited metal).</li>
+                <li class="mb-2"><strong>Thermal Cutting Quality:</strong> Flame-cut edges on heavy gusset plates must conform to AWS surface roughness standards (SSPC Category 3 or better).</li>
+              </ul>
+            </div>
+
+            <!-- Content Section 5 -->
+            <div id="section-conclusion" class="mb-4">
+              <h3 class="h4">5. Economic Impact & Tonnage Savings</h3>
+              <p>
+                Upgrading from ASTM A36 to ASTM A992 typically yields a <strong>15% to 22% reduction in total steel tonnage</strong> for mid-to-high rise framing. While the raw steel per-pound price premium is marginal (&lt;4%), the compounding savings in shipping, crane hoist picks, and foundation piling depths dramatically reduce total project costs.
+              </p>
+            </div>
+
+            <!-- Social Share Bar & Tags -->
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top border-bottom border-light-subtle my-5">
+              <div class="d-flex gap-2 align-items-center mb-2 mb-sm-0">
+                <span class="fw-bold small text-muted">Tags:</span>
+                <span class="badge bg-alt text-main border">#AISC</span>
+                <span class="badge bg-alt text-main border">#ASTM_A992</span>
+                <span class="badge bg-alt text-main border">#Metallurgy</span>
+                <span class="badge bg-alt text-main border">#BIM</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center">
+                <span class="fw-bold small text-muted">Share:</span>
+                <a href="https://www.linkedin.com/sharing/share-offsite/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm py-1 px-2" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm py-1 px-2" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm py-1 px-2" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+            </div>
+
+                        <!-- Author Biography Box -->
+            <div class="p-4 bg-alt rounded border border-light-subtle d-flex flex-column flex-sm-row gap-4 align-items-center my-5">
+              <img src="assets/images/avatar-2.jpg" alt="Elena Rostova" class="rounded-circle shadow-sm" style="width: 100px; height: 100px; object-fit: cover;">
+              <div>
+                <h4 class="h5 mb-1">Elena Rostova</h4>
+                <p class="small text-accent fw-bold mb-2">Senior Lead Structural BIM Modeler • Tekla Structures Certified</p>
+                <p class="small text-muted mb-0">
+                  Elena specializes in advanced 3D modeling, parametric connection engineering, and automated DSTV data integration for high-rise commercial structures and industrial plants.
+                </p>
+              </div>
+            </div>
+
+                        <!-- Previous / Next Article Navigation -->
+            <div class="row g-3 my-4">
+              <div class="col-sm-6">
+                <a href="blog-details.html" class="p-3 bg-surface rounded border d-block text-main text-decoration-none h-100">
+                  <small class="text-accent fw-bold"><i class="fa-solid fa-arrow-left me-1"></i> Previous Article</small>
+                  <h6 class="mb-0 mt-1">Advances in ASTM A992 & S355 High-Strength Steel</h6>
+                </a>
+              </div>
+              <div class="col-sm-6 text-sm-end">
+                <a href="blog-details-welding.html" class="p-3 bg-surface rounded border d-block text-main text-decoration-none h-100">
+                  <small class="text-accent fw-bold">Next Article <i class="fa-solid fa-arrow-right ms-1"></i></small>
+                  <h6 class="mb-0 mt-1">Essential Quality Protocols for Submerged Arc Welding of Heavy Girders</h6>
+                </a>
+              </div>
+            </div>
+
+            <!-- Comments Section -->
+            <div class="my-5">
+              <h3 class="h4 mb-4">Comments (2)</h3>
+              <div class="d-flex gap-3 mb-4 pb-3 border-bottom border-light-subtle">
+                <img src="assets/images/avatar-1.jpg" alt="Arthur Pendelton" class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
+                <div>
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <h6 class="mb-0">Arthur Pendelton, SE</h6>
+                    <small class="text-muted">&bull; 2 days ago</small>
+                  </div>
+                  <p class="small text-muted mb-0">
+                    Excellent summary of the yield-to-tensile ratio requirement. Many junior engineers overlook the fact that over-strength steel can force brittle failure mechanisms in seismic moment frames.
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3 mb-4 pb-3 border-bottom border-light-subtle">
+                <img src="assets/images/avatar-2.jpg" alt="Laura Gomez" class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
+                <div>
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <h6 class="mb-0">Laura Gomez</h6>
+                    <small class="text-muted">&bull; 5 days ago</small>
+                  </div>
+                  <p class="small text-muted mb-0">
+                    What preheat temperature would you recommend for 65mm thick base plates using AWS D1.1 Category B consumables?
+                  </p>
+                </div>
+              </div>
+
+              <!-- Leave a Comment Form -->
+              <div class="p-4 bg-alt rounded border border-light-subtle mt-4">
+                <h4 class="h5 mb-3">Leave a Technical Comment</h4>
+                <form id="commentForm">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Your Name *" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" class="form-control" placeholder="Your Corporate Email *" required>
+                    </div>
+                    <div class="col-12">
+                      <textarea class="form-control" rows="4" placeholder="Your engineering commentary..." required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary-custom">Post Comment</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-lg-4">
+          <div class="sidebar-sticky-wrap">
+            <!-- Search Widget -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-title">Search Journal</h4>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search topics, specs, AISC...">
+                <button class="btn btn-primary-custom" type="button" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+
+            <!-- Technical Categories -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-title">Technical Categories</h4>
+              <ul class="category-list">
+                <li><a href="blog.html"><span class="text-main">Material Science & Metallurgy</span> <span class="badge bg-alt text-muted border">14</span></a></li>
+                <li><a href="blog.html"><span class="text-main">3D BIM & Tekla Detailing</span> <span class="badge bg-alt text-muted border">18</span></a></li>
+                <li><a href="blog.html"><span class="text-main">Submerged Arc & NDT Welding</span> <span class="badge bg-alt text-muted border">12</span></a></li>
+                <li><a href="blog.html"><span class="text-main">PEB Clear-Span Engineering</span> <span class="badge bg-alt text-muted border">16</span></a></li>
+                <li><a href="blog.html"><span class="text-main">Heavy Crane Bays & Runways</span> <span class="badge bg-alt text-muted border">9</span></a></li>
+                <li><a href="blog.html"><span class="text-main">AISC 341 Seismic Provisions</span> <span class="badge bg-alt text-muted border">11</span></a></li>
+              </ul>
+            </div>
+
+            <!-- Related Articles -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-title">Related Whitepapers</h4>
+              <div class="d-flex align-items-center gap-3 mb-3 pb-3 border-bottom border-light-subtle">
+                <img src="assets/images/tekla-3d-detailing.jpg" alt="Tekla 3D Detailing" class="rounded" style="width: 65px; height: 60px; object-fit: cover;">
+                <div>
+                  <small class="text-accent fw-bold d-block">Oct 28, 2026</small>
+                  <h6 class="mb-0 fs-6"><a href="blog-details-tekla.html" class="text-main">Why Tekla 3D Detailing Eliminates 98% of Jobsite Clashes</a></h6>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-3 pb-3 border-bottom border-light-subtle">
+                <img src="assets/images/submerged-arc-welding.jpg" alt="Submerged Arc Welding" class="rounded" style="width: 65px; height: 60px; object-fit: cover;">
+                <div>
+                  <small class="text-accent fw-bold d-block">Oct 14, 2026</small>
+                  <h6 class="mb-0 fs-6"><a href="blog-details-welding.html" class="text-main">Quality Protocols for Submerged Arc Welding of Heavy Girders</a></h6>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-3 pb-3 border-bottom border-light-subtle">
+                <img src="assets/images/peb-clear-span-designs.jpg" alt="PEB Clear-Span" class="rounded" style="width: 65px; height: 60px; object-fit: cover;">
+                <div>
+                  <small class="text-accent fw-bold d-block">Sep 29, 2026</small>
+                  <h6 class="mb-0 fs-6"><a href="blog-details-peb.html" class="text-main">Optimizing PEB Clear-Span Warehouse Designs</a></h6>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="assets/images/plasma-vs-fiber-laser.jpg" alt="Plasma vs Laser" class="rounded" style="width: 65px; height: 60px; object-fit: cover;">
+                <div>
+                  <small class="text-accent fw-bold d-block">Sep 15, 2026</small>
+                  <h6 class="mb-0 fs-6"><a href="blog-details-plasma.html" class="text-main">High-Definition Plasma vs. Fiber Laser Cutting</a></h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download Technical Spec Sheet PDF Box -->
+            <div class="sidebar-widget p-4 bg-alt border border-light-subtle rounded">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="brand-logo-icon" style="width: 44px; height: 44px; min-width: 44px; font-size: 1.15rem;">
+                  <i class="fa-solid fa-file-pdf text-white"></i>
+                </div>
+                <div>
+                  <h5 class="h6 mb-0 text-main">Steel Grade Matrix (PDF)</h5>
+                  <small class="text-muted">ASTM A992 vs S355 Data</small>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">
+                Download chemical composition limits, Charpy V-notch energy curves, and weld preheat requirements.
+              </p>
+              <a href="contact.html#project-quote" class="btn btn-outline-custom w-100 btn-sm">
+                <i class="fa-solid fa-download me-2"></i>Download Spec Sheet
+              </a>
+            </div>
+
+            <!-- Need a Quote CTA -->
+            <div class="sidebar-widget bg-dark-industrial text-white p-4">
+              <h4 class="text-white mb-2"><i class="fa-solid fa-calculator text-accent me-2"></i>Project Estimates</h4>
+              <p class="small text-secondary-light mb-3">Need an expert take-off on your structural package? Connect with our chief estimation team.</p>
+              <div class="p-2 mb-3 rounded border border-light-subtle" style="background: rgba(255,255,255,0.05);">
+                <div class="d-flex align-items-center justify-content-between small text-white">
+                  <span><i class="fa-solid fa-phone text-accent me-1"></i> Direct Line:</span>
+                  <a href="tel:+18005557833" class="text-accent fw-bold">+1 (800) 555-STEEL</a>
+                </div>
+              </div>
+              <a href="contact.html#project-quote" class="btn btn-primary-custom w-100">Submit Drawings (RFQ) <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+
+            <!-- Technical Tags Cloud -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-title">Technical Tags</h4>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">ASTM A992</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">AISC 360</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">AWS D1.1</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">Tekla 3D</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">S355JR</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">W-Shapes</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">PEB Frames</a>
+                <a href="blog.html" class="badge bg-alt text-main border py-2 px-3 text-decoration-none">NDT Inspection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pre-Footer CTA Section -->
+  <section class="section-padding-sm bg-accent text-white pre-footer-cta">
+    <div class="container text-center">
+      <h2 class="text-white display-6 fw-bold mb-3">READY TO COMMENCE YOUR NEXT STRUCTURAL BUILD?</h2>
+      <p class="lead mb-4 text-white">Send us your CAD drawings or architectural tender specs for a prompt, transparent, and comprehensive quotation.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="contact.html#project-quote" class="btn btn-navy btn-lg shadow"><span>Request Technical Proposal</span><i class="fa-solid fa-file-arrow-up ms-2"></i></a>
+        <a href="services.html" class="btn btn-outline-light btn-lg"><span>Explore Capabilities</span><i class="fa-solid fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & About (col-lg-4 col-md-6) -->
+        <div class="col-lg-3 col-md-6 col-brand-wrap">
+          <div class="footer-brand-wrap">
+            <a class="brand-logo" href="index.html" aria-label="SteelCraft Home">
+              <div class="brand-logo-icon"><i class="fa-solid fa-industry"></i></div>
+              <div class="text-white">STEEL<span class="accent">CRAFT</span></div>
+            </a>
+          </div>
+          <p class="text-secondary-light">
+            AISC and ISO 9001:2015 certified steel fabrication and structural engineering contractor specializing in pre-engineered buildings and heavy industrial structures.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Core Services Links (col-lg-2 col-md-3 col-6) -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-widget-title">Core Services</h4>
+          <ul class="footer-links">
+            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Structural Steel</a></li>
+            <li><a href="service-details-sheds.html"><i class="fa-solid fa-angle-right"></i> Industrial Sheds</a></li>
+            <li><a href="service-details-buildings.html"><i class="fa-solid fa-angle-right"></i> Steel Buildings</a></li>
+            <li><a href="service-details-welding.html"><i class="fa-solid fa-angle-right"></i> Welding Services</a></li>
+            <li><a href="service-details-cutting.html"><i class="fa-solid fa-angle-right"></i> CNC Cutting</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> All Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Navigation (col-lg-2 col-md-3 col-6) -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-widget-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="projects.html"><i class="fa-solid fa-angle-right"></i> Project Portfolio</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Visual Gallery</a></li>
+            <li><a href="pricing.html"><i class="fa-solid fa-angle-right"></i> Pricing Packages</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Technical Blog</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Newsletter (col-lg-4 col-md-6) -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-widget-title">Houston HQ</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <div>
+              <strong class="text-white">Facility Address:</strong><br>
+              4528 Heavy Industry Pkwy, Houston, TX
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone-volume"></i>
+            <div>
+              <strong class="text-white">Phone Support:</strong><br>
+              <a href="tel:+18005553733">+1 (800) 555-STEEL</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <div>
+              <strong class="text-white">Technical Estimations:</strong><br>
+              <a href="mailto:quotes@steelcraft-works.com">quotes@steelcraft-works.com</a>
+            </div>
+          </div>
+
+          <form class="newsletter-form mt-2">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Corporate email..." required>
+              <button class="btn btn-primary-custom" type="submit">Join</button>
+            </div>
+            <div class="newsletter-feedback mt-1"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container text-center text-secondary-light small">
+        &copy; 2026 SteelCraft Industrial Works LLC. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -284,6 +284,27 @@
 
 }
 
+/* High-contrast protection for white text utilities in dark theme */
+[data-theme="dark"] .text-white,
+[data-theme="dark"] .text-white p,
+[data-theme="dark"] .text-white .lead,
+[data-theme="dark"] .text-white span,
+[data-theme="dark"] p.text-white,
+[data-theme="dark"] p.text-white.lead,
+[data-theme="dark"] span.text-white {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .text-white.text-opacity-90,
+[data-theme="dark"] .text-white .text-opacity-90,
+[data-theme="dark"] p.text-white.text-opacity-90,
+[data-theme="dark"] .text-white.text-opacity-75,
+[data-theme="dark"] .text-white .text-opacity-75,
+[data-theme="dark"] p.text-white.text-opacity-75 {
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
 
 
 /* Text utility classes */
@@ -507,6 +528,12 @@
   border-color: #1E2E47 !important;
 
   color: #F1F5F9;
+
+}
+
+[data-theme="dark"] .pricing-card.featured {
+
+  border-color: var(--accent) !important;
 
 }
 
@@ -983,6 +1010,14 @@ ul {
   display: inline-flex;
 
   align-items: center;
+
+  align-self: flex-start;
+
+  width: -webkit-fit-content;
+
+  width: -moz-fit-content;
+
+  width: fit-content;
 
   gap: 8px;
 
@@ -3863,7 +3898,7 @@ ul {
 
   border-radius: var(--radius-md);
 
-  padding: 40px 30px;
+  padding: 40px 30px 32px;
 
   text-align: center;
 
@@ -3875,17 +3910,33 @@ ul {
 
   box-shadow: var(--card-shadow);
 
+  display: flex;
+
+  flex-direction: column;
+
 }
 
 
 
 .pricing-card.featured {
 
-  border-color: var(--accent);
+  border: 2px solid var(--accent) !important;
 
-  border-width: 2px;
+  box-shadow: 0 12px 35px rgba(249, 115, 22, 0.16);
 
-  transform: scale(1.04);
+  transform: none;
+
+  z-index: 2;
+
+}
+
+
+
+[data-theme="dark"] .pricing-card.featured {
+
+  border-color: var(--accent) !important;
+
+  box-shadow: 0 12px 35px rgba(249, 115, 22, 0.22) !important;
 
 }
 
@@ -3919,6 +3970,42 @@ ul {
 
   border-radius: 50px;
 
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
+
+  white-space: nowrap;
+
+}
+
+
+
+.pricing-header {
+
+  min-height: 76px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+}
+
+
+
+.pricing-price-wrap {
+
+  min-height: 84px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  margin-top: 12px;
+
+  margin-bottom: 8px;
+
 }
 
 
@@ -3927,7 +4014,7 @@ ul {
 
   font-family: var(--font-heading);
 
-  font-size: 3rem;
+  font-size: 2.85rem;
 
   font-weight: 800;
 
@@ -3935,7 +4022,7 @@ ul {
 
   line-height: 1;
 
-  margin: 20px 0 10px;
+  margin: 0 0 8px;
 
 }
 
@@ -3955,9 +4042,15 @@ ul {
 
 .pricing-features {
 
-  margin: 30px 0;
+  margin: 20px 0 28px;
+
+  padding: 0;
+
+  list-style: none;
 
   text-align: left;
+
+  flex-grow: 1;
 
 }
 
@@ -3969,13 +4062,15 @@ ul {
 
   border-bottom: 1px solid var(--border-color);
 
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 
   display: flex;
 
   align-items: center;
 
   gap: 12px;
+
+  min-height: 46px;
 
 }
 
@@ -3984,6 +4079,8 @@ ul {
 .pricing-features li i.fa-check {
 
   color: var(--success);
+
+  flex-shrink: 0;
 
 }
 
@@ -3994,6 +4091,26 @@ ul {
   color: var(--secondary-light);
 
   opacity: 0.5;
+
+  flex-shrink: 0;
+
+}
+
+
+
+.pricing-footer {
+
+  width: 100%;
+
+}
+
+
+
+.pricing-card:hover {
+
+  box-shadow: var(--card-shadow-hover);
+
+  border-color: var(--accent);
 
 }
 
@@ -5598,14 +5715,14 @@ ul {
 
 
 
-/* RTL Toggle Button Styling (LTR [Symbol] RTL) */
+/* RTL Toggle Button Styling (RTL Text Only) */
 .header-actions .rtl-toggle-btn {
   width: auto !important;
-  min-width: auto !important;
+  min-width: 44px !important;
   height: 42px !important;
   min-height: 42px !important;
-  padding: 0 12px !important;
-  font-size: 0.78rem !important;
+  padding: 0 14px !important;
+  font-size: 0.8rem !important;
   font-family: var(--font-heading) !important;
   font-weight: 700 !important;
   letter-spacing: 0.5px !important;
@@ -5616,15 +5733,9 @@ ul {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 6px !important;
-  direction: ltr !important;
   white-space: nowrap !important;
   cursor: pointer;
   transition: all var(--transition-fast);
-}
-
-.header-actions .rtl-toggle-btn i {
-  font-size: 0.75rem !important;
 }
 
 .header-actions .rtl-toggle-btn:hover,
@@ -5633,6 +5744,162 @@ ul {
   background-color: var(--accent) !important;
   border-color: var(--accent) !important;
   color: #FFFFFF !important;
+}
+
+
+/* ==========================================================================
+   PRE-FOOTER CTA & ACCENT BACKGROUND HIGH-CONTRAST ENHANCEMENTS
+   ========================================================================== */
+.bg-accent,
+section.bg-accent,
+.pre-footer-cta {
+  background-color: var(--accent) !important;
+  color: #FFFFFF !important;
+}
+
+/* Headings and paragraphs inside accent sections */
+.bg-accent h1, .bg-accent h2, .bg-accent h3, .bg-accent h4, .bg-accent h5, .bg-accent h6,
+.bg-accent p, .bg-accent .lead, .bg-accent li, .bg-accent small,
+section.bg-accent h1, section.bg-accent h2, section.bg-accent h3, section.bg-accent h4, section.bg-accent h5, section.bg-accent h6,
+section.bg-accent p, section.bg-accent .lead, section.bg-accent li, section.bg-accent small,
+.pre-footer-cta h1, .pre-footer-cta h2, .pre-footer-cta h3, .pre-footer-cta h4, .pre-footer-cta h5, .pre-footer-cta h6,
+.pre-footer-cta p, .pre-footer-cta .lead, .pre-footer-cta li, .pre-footer-cta small,
+[data-theme="dark"] .bg-accent h1, [data-theme="dark"] .bg-accent h2, [data-theme="dark"] .bg-accent h3, [data-theme="dark"] .bg-accent h4, [data-theme="dark"] .bg-accent h5, [data-theme="dark"] .bg-accent h6,
+[data-theme="dark"] .bg-accent p, [data-theme="dark"] .bg-accent .lead, [data-theme="dark"] .bg-accent li, [data-theme="dark"] .bg-accent small,
+[data-theme="dark"] section.bg-accent h1, [data-theme="dark"] section.bg-accent h2, [data-theme="dark"] section.bg-accent h3, [data-theme="dark"] section.bg-accent h4, [data-theme="dark"] section.bg-accent h5, [data-theme="dark"] section.bg-accent h6,
+[data-theme="dark"] section.bg-accent p, [data-theme="dark"] section.bg-accent .lead, [data-theme="dark"] section.bg-accent li, [data-theme="dark"] section.bg-accent small,
+[data-theme="dark"] .pre-footer-cta h1, [data-theme="dark"] .pre-footer-cta h2, [data-theme="dark"] .pre-footer-cta h3, [data-theme="dark"] .pre-footer-cta h4, [data-theme="dark"] .pre-footer-cta h5, [data-theme="dark"] .pre-footer-cta h6,
+[data-theme="dark"] .pre-footer-cta p, [data-theme="dark"] .pre-footer-cta .lead, [data-theme="dark"] .pre-footer-cta li, [data-theme="dark"] .pre-footer-cta small {
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
+/* Primary Button (Navy) inside CTA */
+.bg-accent .btn-navy,
+section.bg-accent .btn-navy,
+.pre-footer-cta .btn-navy,
+[data-theme="dark"] .bg-accent .btn-navy,
+[data-theme="dark"] section.bg-accent .btn-navy,
+[data-theme="dark"] .pre-footer-cta .btn-navy {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #FFFFFF !important;
+}
+
+.bg-accent .btn-navy span,
+.bg-accent .btn-navy i,
+section.bg-accent .btn-navy span,
+section.bg-accent .btn-navy i,
+.pre-footer-cta .btn-navy span,
+.pre-footer-cta .btn-navy i,
+[data-theme="dark"] .bg-accent .btn-navy span,
+[data-theme="dark"] .bg-accent .btn-navy i,
+[data-theme="dark"] section.bg-accent .btn-navy span,
+[data-theme="dark"] section.bg-accent .btn-navy i,
+[data-theme="dark"] .pre-footer-cta .btn-navy span,
+[data-theme="dark"] .pre-footer-cta .btn-navy i {
+  color: #FFFFFF !important;
+}
+
+.bg-accent .btn-navy:hover,
+section.bg-accent .btn-navy:hover,
+.pre-footer-cta .btn-navy:hover,
+[data-theme="dark"] .bg-accent .btn-navy:hover,
+[data-theme="dark"] section.bg-accent .btn-navy:hover,
+[data-theme="dark"] .pre-footer-cta .btn-navy:hover {
+  background-color: var(--primary-light) !important;
+  border-color: var(--primary-light) !important;
+  color: #FFFFFF !important;
+}
+
+/* Outline-Light Button default state (transparent with white border & text) */
+.bg-accent .btn-outline-light,
+section.bg-accent .btn-outline-light,
+.pre-footer-cta .btn-outline-light,
+[data-theme="dark"] .bg-accent .btn-outline-light,
+[data-theme="dark"] section.bg-accent .btn-outline-light,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light {
+  background-color: transparent !important;
+  border-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+.bg-accent .btn-outline-light span,
+.bg-accent .btn-outline-light i,
+section.bg-accent .btn-outline-light span,
+section.bg-accent .btn-outline-light i,
+.pre-footer-cta .btn-outline-light span,
+.pre-footer-cta .btn-outline-light i,
+[data-theme="dark"] .bg-accent .btn-outline-light span,
+[data-theme="dark"] .bg-accent .btn-outline-light i,
+[data-theme="dark"] section.bg-accent .btn-outline-light span,
+[data-theme="dark"] section.bg-accent .btn-outline-light i,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light span,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light i {
+  color: #FFFFFF !important;
+}
+
+/* Outline-Light Button HOVER, FOCUS & ACTIVE state: White background with crisp orange text & icon */
+.bg-accent .btn-outline-light:hover,
+.bg-accent .btn-outline-light:focus,
+.bg-accent .btn-outline-light:active,
+section.bg-accent .btn-outline-light:hover,
+section.bg-accent .btn-outline-light:focus,
+section.bg-accent .btn-outline-light:active,
+.pre-footer-cta .btn-outline-light:hover,
+.pre-footer-cta .btn-outline-light:focus,
+.pre-footer-cta .btn-outline-light:active,
+[data-theme="dark"] .bg-accent .btn-outline-light:hover,
+[data-theme="dark"] .bg-accent .btn-outline-light:focus,
+[data-theme="dark"] .bg-accent .btn-outline-light:active,
+[data-theme="dark"] section.bg-accent .btn-outline-light:hover,
+[data-theme="dark"] section.bg-accent .btn-outline-light:focus,
+[data-theme="dark"] section.bg-accent .btn-outline-light:active,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light:hover,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light:focus,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light:active {
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  color: var(--accent) !important;
+}
+
+.bg-accent .btn-outline-light:hover span,
+.bg-accent .btn-outline-light:hover i,
+.bg-accent .btn-outline-light:focus span,
+.bg-accent .btn-outline-light:focus i,
+.bg-accent .btn-outline-light:active span,
+.bg-accent .btn-outline-light:active i,
+section.bg-accent .btn-outline-light:hover span,
+section.bg-accent .btn-outline-light:hover i,
+section.bg-accent .btn-outline-light:focus span,
+section.bg-accent .btn-outline-light:focus i,
+section.bg-accent .btn-outline-light:active span,
+section.bg-accent .btn-outline-light:active i,
+.pre-footer-cta .btn-outline-light:hover span,
+.pre-footer-cta .btn-outline-light:hover i,
+.pre-footer-cta .btn-outline-light:focus span,
+.pre-footer-cta .btn-outline-light:focus i,
+.pre-footer-cta .btn-outline-light:active span,
+.pre-footer-cta .btn-outline-light:active i,
+[data-theme="dark"] .bg-accent .btn-outline-light:hover span,
+[data-theme="dark"] .bg-accent .btn-outline-light:hover i,
+[data-theme="dark"] .bg-accent .btn-outline-light:focus span,
+[data-theme="dark"] .bg-accent .btn-outline-light:focus i,
+[data-theme="dark"] .bg-accent .btn-outline-light:active span,
+[data-theme="dark"] .bg-accent .btn-outline-light:active i,
+[data-theme="dark"] section.bg-accent .btn-outline-light:hover span,
+[data-theme="dark"] section.bg-accent .btn-outline-light:hover i,
+[data-theme="dark"] section.bg-accent .btn-outline-light:focus span,
+[data-theme="dark"] section.bg-accent .btn-outline-light:focus i,
+[data-theme="dark"] section.bg-accent .btn-outline-light:active span,
+[data-theme="dark"] section.bg-accent .btn-outline-light:active i,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light:hover span,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light:hover i,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light:focus span,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light:focus i,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light:active span,
+[data-theme="dark"] .pre-footer-cta .btn-outline-light:active i {
+  color: var(--accent) !important;
 }
 
 
@@ -5791,20 +6058,16 @@ ul {
   .header-actions .rtl-toggle-btn {
     width: auto !important;
     height: 36px !important;
-    min-width: auto !important;
+    min-width: 36px !important;
     min-height: 36px !important;
-    padding: 0 8px !important;
-    font-size: 0.7rem !important;
-    gap: 5px !important;
+    padding: 0 10px !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.3px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-  }
-
-  .header-actions .rtl-toggle-btn i {
-    font-size: 0.68rem !important;
   }
 }
 
@@ -5851,15 +6114,11 @@ ul {
   .header-actions .rtl-toggle-btn {
     width: auto !important;
     height: 32px !important;
-    min-width: auto !important;
+    min-width: 32px !important;
     min-height: 32px !important;
-    padding: 0 6px !important;
-    font-size: 0.65rem !important;
-    gap: 4px !important;
-  }
-
-  .header-actions .rtl-toggle-btn i {
-    font-size: 0.62rem !important;
+    padding: 0 8px !important;
+    font-size: 0.68rem !important;
+    letter-spacing: 0.2px !important;
   }
 }
 

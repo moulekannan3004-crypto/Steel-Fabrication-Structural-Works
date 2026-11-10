@@ -31,7 +31,7 @@
 
       <div class="header-actions order-xl-3">
         <button class="theme-toggle-btn" title="Toggle Light/Dark Theme"><i class="fa-solid fa-moon"></i></button>
-        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction" aria-label="Switch Direction"><span>LTR</span> <i class="fa-solid fa-right-left"></i> <span>RTL</span></button>
+        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction" aria-label="Switch Direction"><span>RTL</span></button>
         <a href="contact.html#project-quote" class="btn btn-primary-custom d-none d-sm-inline-flex ms-2">
           <span>Get a Quote</span>
           <i class="fa-solid fa-arrow-right"></i>
@@ -109,26 +109,28 @@
     <div class="container">
       <div class="row align-items-stretch g-5">
         <div class="col-lg-6 d-flex flex-column">
-          <div class="position-relative h-100 w-100 flex-grow-1">
-            <img src="assets/images/about-craftsmanship.jpg" alt="Built on Integrity, Advanced Engineering & Relentless Craftsmanship" class="img-fluid rounded shadow-lg w-100 h-100" style="object-fit: cover; min-height: 480px;">
-            <div class="tech-spec-badge d-none d-sm-block" style="bottom: 24px; left: 24px;">
+          <div class="equal-height-img-wrap shadow-lg">
+            <img src="assets/images/about-craftsmanship.jpg" alt="Built on Integrity, Advanced Engineering & Relentless Craftsmanship">
+            <div class="tech-spec-badge d-none d-sm-block" style="bottom: 24px; left: 24px; z-index: 3;">
               <div class="number">1989</div>
               <div class="label">Pioneering Steel Excellence</div>
             </div>
           </div>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-between">
-          <div class="section-subtitle">
-            <i class="fa-solid fa-building"></i> Our Story
+          <div>
+            <div class="section-subtitle">
+              <i class="fa-solid fa-building"></i> Our Story
+            </div>
+            <h2 class="section-title">BUILT ON INTEGRITY, ADVANCED ENGINEERING & RELENTLESS CRAFTSMANSHIP</h2>
+            <p>
+              Founded in Houston, Texas in 1989, SteelCraft started as a specialized heavy plate welding shop. Over the past 35+ years, we have evolved into one of North America's premier AISC-certified steel fabricators and turnkey structural contractors.
+            </p>
+            <p class="mb-0">
+              Today, our facility spans 180,000 square feet of heavy fabrication bays equipped with automated 3-spindle CNC beam lines, 1000-ton hydraulic brake presses, robotic plasma cutters, and dedicated submerged arc welding stations. We partner directly with leading EPC contractors, real estate developers, and civil agencies.
+            </p>
           </div>
-          <h2 class="section-title">BUILT ON INTEGRITY, ADVANCED ENGINEERING & RELENTLESS CRAFTSMANSHIP</h2>
-          <p>
-            Founded in Houston, Texas in 1989, SteelCraft started as a specialized heavy plate welding shop. Over the past 35+ years, we have evolved into one of North America's premier AISC-certified steel fabricators and turnkey structural contractors.
-          </p>
-          <p>
-            Today, our facility spans 180,000 square feet of heavy fabrication bays equipped with automated 3-spindle CNC beam lines, 1000-ton hydraulic brake presses, robotic plasma cutters, and dedicated submerged arc welding stations. We partner directly with leading EPC contractors, real estate developers, and civil agencies.
-          </p>
-          <div class="row g-4 mt-2">
+          <div class="row g-4 pt-3 mt-auto">
             <div class="col-sm-6">
               <div class="d-flex align-items-center gap-3">
                 <div class="counter-icon fs-2 mb-0"><i class="fa-solid fa-industry"></i></div>
@@ -415,6 +417,19 @@
       </div>
     </div>
   </section>
+  <!-- Pre-Footer CTA Section -->
+  <section class="section-padding-sm bg-accent text-white pre-footer-cta">
+    <div class="container text-center">
+      <h2 class="text-white display-6 fw-bold mb-3">READY TO COMMENCE YOUR NEXT STRUCTURAL BUILD?</h2>
+      <p class="lead mb-4 text-white">Send us your CAD drawings or architectural tender specs for a prompt, transparent, and comprehensive quotation.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="contact.html#project-quote" class="btn btn-navy btn-lg shadow"><span>Request Technical Proposal</span><i class="fa-solid fa-file-arrow-up ms-2"></i></a>
+        <a href="services.html" class="btn btn-outline-light btn-lg"><span>Explore Capabilities</span><i class="fa-solid fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Footer -->
   <footer class="footer-main">
@@ -444,10 +459,10 @@
           <h4 class="footer-widget-title">Core Services</h4>
           <ul class="footer-links">
             <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Structural Steel</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Industrial Sheds</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Steel Buildings</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Welding Services</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> CNC Cutting</a></li>
+            <li><a href="service-details-sheds.html"><i class="fa-solid fa-angle-right"></i> Industrial Sheds</a></li>
+            <li><a href="service-details-buildings.html"><i class="fa-solid fa-angle-right"></i> Steel Buildings</a></li>
+            <li><a href="service-details-welding.html"><i class="fa-solid fa-angle-right"></i> Welding Services</a></li>
+            <li><a href="service-details-cutting.html"><i class="fa-solid fa-angle-right"></i> CNC Cutting</a></li>
             <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> All Services</a></li>
           </ul>
         </div>

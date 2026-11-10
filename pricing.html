@@ -31,7 +31,7 @@
 
       <div class="header-actions order-xl-3">
         <button class="theme-toggle-btn" title="Toggle Light/Dark Theme"><i class="fa-solid fa-moon"></i></button>
-        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction" aria-label="Switch Direction"><span>LTR</span> <i class="fa-solid fa-right-left"></i> <span>RTL</span></button>
+        <button class="rtl-toggle-btn" title="Switch LTR / RTL Direction" aria-label="Switch Direction"><span>RTL</span></button>
         <a href="contact.html#project-quote" class="btn btn-primary-custom d-none d-sm-inline-flex ms-2">
           <span>Get a Quote</span>
           <i class="fa-solid fa-arrow-right"></i>
@@ -117,14 +117,18 @@
         </p>
       </div>
 
-      <div class="row g-4 align-items-center">
+      <div class="row g-4 align-items-stretch">
         <!-- Package 1: Basic / Supply Only -->
-        <div class="col-lg-4 col-md-6">
-          <div class="pricing-card">
-            <h4 class="h5 mb-2">Basic Supply</h4>
-            <p class="small text-muted mb-3">Shop fabrication of standard structural steel components, primed and delivered to site.</p>
-            <div class="pricing-price">$1,950 <span>/ Metric Ton</span></div>
-            <small class="text-muted d-block">Ideal for sub-contracted packages</small>
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div class="pricing-card w-100 d-flex flex-column">
+            <div class="pricing-header">
+              <h4 class="h5 mb-2">Basic Supply</h4>
+              <p class="small text-muted mb-0">Shop fabrication of standard structural steel components, primed and delivered to site.</p>
+            </div>
+            <div class="pricing-price-wrap">
+              <div class="pricing-price">$1,950 <span>/ Metric Ton</span></div>
+              <small class="text-muted d-block">Ideal for sub-contracted packages</small>
+            </div>
 
             <ul class="pricing-features">
               <li><i class="fa-solid fa-check"></i> ASTM A36 / A992 Standard Steel</li>
@@ -136,18 +140,24 @@
               <li><i class="fa-solid fa-xmark"></i> Independent Third-Party NDT</li>
             </ul>
 
-            <a href="contact.html#project-quote" class="btn btn-outline-custom w-100">Select Basic Package</a>
+            <div class="pricing-footer mt-auto">
+              <a href="contact.html#project-quote" class="btn btn-outline-custom w-100">Select Basic Package</a>
+            </div>
           </div>
         </div>
 
         <!-- Package 2: Standard (Featured) -->
-        <div class="col-lg-4 col-md-6">
-          <div class="pricing-card featured">
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div class="pricing-card featured w-100 d-flex flex-column">
             <span class="pricing-badge">Most Popular</span>
-            <h4 class="h5 mb-2">Engineered Fabrication</h4>
-            <p class="small text-muted mb-3">Complete 3D detailing, precision robotic fabrication, shot-blasting, and epoxy paint system.</p>
-            <div class="pricing-price">$2,650 <span>/ Metric Ton</span></div>
-            <small class="text-accent fw-bold d-block">Recommended for Mid-Rise & Industrial Sheds</small>
+            <div class="pricing-header">
+              <h4 class="h5 mb-2">Engineered Fabrication</h4>
+              <p class="small text-muted mb-0">Complete 3D detailing, precision robotic fabrication, shot-blasting, and epoxy paint system.</p>
+            </div>
+            <div class="pricing-price-wrap">
+              <div class="pricing-price">$2,650 <span>/ Metric Ton</span></div>
+              <small class="text-accent fw-bold d-block">Recommended for Mid-Rise & Industrial Sheds</small>
+            </div>
 
             <ul class="pricing-features">
               <li><i class="fa-solid fa-check"></i> High-Strength ASTM A992 / Gr. 50</li>
@@ -159,17 +169,23 @@
               <li><i class="fa-solid fa-xmark"></i> Turnkey Site Rigging & Crane Crew</li>
             </ul>
 
-            <a href="contact.html#project-quote" class="btn btn-primary-custom w-100">Select Engineered Tier</a>
+            <div class="pricing-footer mt-auto">
+              <a href="contact.html#project-quote" class="btn btn-primary-custom w-100">Select Engineered Tier</a>
+            </div>
           </div>
         </div>
 
         <!-- Package 3: Premium / Turnkey EPC -->
-        <div class="col-lg-4 col-md-6">
-          <div class="pricing-card">
-            <h4 class="h5 mb-2">Turnkey EPC Erection</h4>
-            <p class="small text-muted mb-3">Full design-build structural solution from PE stamp to anchor bolt layout and field erection.</p>
-            <div class="pricing-price">$3,450 <span>/ Metric Ton</span></div>
-            <small class="text-muted d-block">Complete Turnkey Responsibility</small>
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div class="pricing-card w-100 d-flex flex-column">
+            <div class="pricing-header">
+              <h4 class="h5 mb-2">Turnkey EPC Erection</h4>
+              <p class="small text-muted mb-0">Full design-build structural solution from PE stamp to anchor bolt layout and field erection.</p>
+            </div>
+            <div class="pricing-price-wrap">
+              <div class="pricing-price">$3,450 <span>/ Metric Ton</span></div>
+              <small class="text-muted d-block">Complete Turnkey Responsibility</small>
+            </div>
 
             <ul class="pricing-features">
               <li><i class="fa-solid fa-check"></i> Everything in Engineered Tier</li>
@@ -181,7 +197,9 @@
               <li><i class="fa-solid fa-check"></i> 10-Year Structural Integrity Warranty</li>
             </ul>
 
-            <a href="contact.html#project-quote" class="btn btn-navy w-100">Select Turnkey EPC</a>
+            <div class="pricing-footer mt-auto">
+              <a href="contact.html#project-quote" class="btn btn-navy w-100">Select Turnkey EPC</a>
+            </div>
           </div>
         </div>
       </div>
@@ -327,6 +345,19 @@
       </div>
     </div>
   </section>
+  <!-- Pre-Footer CTA Section -->
+  <section class="section-padding-sm bg-accent text-white pre-footer-cta">
+    <div class="container text-center">
+      <h2 class="text-white display-6 fw-bold mb-3">READY TO COMMENCE YOUR NEXT STRUCTURAL BUILD?</h2>
+      <p class="lead mb-4 text-white">Send us your CAD drawings or architectural tender specs for a prompt, transparent, and comprehensive quotation.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="contact.html#project-quote" class="btn btn-navy btn-lg shadow"><span>Request Technical Proposal</span><i class="fa-solid fa-file-arrow-up ms-2"></i></a>
+        <a href="services.html" class="btn btn-outline-light btn-lg"><span>Explore Capabilities</span><i class="fa-solid fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Footer -->
   <footer class="footer-main">
@@ -356,10 +387,10 @@
           <h4 class="footer-widget-title">Core Services</h4>
           <ul class="footer-links">
             <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Structural Steel</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Industrial Sheds</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Steel Buildings</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> Welding Services</a></li>
-            <li><a href="service-details.html"><i class="fa-solid fa-angle-right"></i> CNC Cutting</a></li>
+            <li><a href="service-details-sheds.html"><i class="fa-solid fa-angle-right"></i> Industrial Sheds</a></li>
+            <li><a href="service-details-buildings.html"><i class="fa-solid fa-angle-right"></i> Steel Buildings</a></li>
+            <li><a href="service-details-welding.html"><i class="fa-solid fa-angle-right"></i> Welding Services</a></li>
+            <li><a href="service-details-cutting.html"><i class="fa-solid fa-angle-right"></i> CNC Cutting</a></li>
             <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> All Services</a></li>
           </ul>
         </div>
